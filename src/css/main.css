@@ -257,13 +257,17 @@ object {
 .nav-main li {
   margin: 0 10px; }
 
+.nav-main a {
+  text-decoration: none; }
+
 .header {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   -ms-flex-pack: justify;
   -webkit-justify-content: space-between;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding: 10px 20px; }
 
 h1 {
   color: #4834d4; }
