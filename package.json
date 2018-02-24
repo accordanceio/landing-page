@@ -1,14 +1,14 @@
 {
-    "name": "startframe",
+    "name": "Accordance",
     "version": "1.0.0",
-    "description": "Starter Framework with gulp & sass",
+    "description": "Invest Early, Invest Securely",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/jamesonamadeus/startframe.git"
+        "url": "git+https://github.com/jamesonamadeus/accordance.git"
     },
     "keywords": [
         "starter",
@@ -22,9 +22,9 @@
     "author": "jamesonamadeus",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/jamesonamadeus/startframe/issues"
+        "url": "https://github.com/jamesonamadeus/accordance/issues"
     },
-    "homepage": "https://github.com/jamesonamadeus/startframe#readme",
+    "homepage": "https://github.com/jamesonamadeus/accordance#readme",
     "devDependencies": {
         "browser-sync": "^2.23.6",
         "gulp": "^3.9.1",
