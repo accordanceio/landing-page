@@ -101,9 +101,9 @@ a {
     }
 }
 
-
-
-
+li {
+    list-style-type: none;
+}
 
 // Responsive styles if needed
 // @include responsive($big-break) {

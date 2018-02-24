@@ -1,0 +1,4 @@
+.header {
+    @include flexbox(flex);
+    @include justify-content( space-between );
+}

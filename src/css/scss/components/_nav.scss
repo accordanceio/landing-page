@@ -1,0 +1,17 @@
+// @import "../base/_master.scss";
+
+.nav {
+
+    &-main {
+
+        &-list {
+            @include flexbox(inline-flex); 
+        }
+
+        li {
+            margin: 0 10px;
+        }
+
+    }
+
+}

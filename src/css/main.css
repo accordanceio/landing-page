@@ -128,6 +128,9 @@ a {
   a:hover, a:focus {
     text-decoration: none; }
 
+li {
+  list-style-type: none; }
+
 @media screen and (max-width: 480px) {
   body {
     font-size: 14px; }
@@ -245,6 +248,22 @@ audio,
 iframe,
 object {
   max-width: 100%; }
+
+.nav-main-list {
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex; }
+
+.nav-main li {
+  margin: 0 10px; }
+
+.header {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between; }
 
 h1 {
   color: #4834d4; }
