@@ -127,6 +127,29 @@ a {
     Flexbox Mixins
 
 --------------------------------------------------------------------- */
+.hide {
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
+
+.remove {
+  display: none; }
+
+.is-hidden {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  opacity: 0;
+  -webkit-transition: opacity ease-in-out 0.2s;
+  -moz-transition: opacity ease-in-out 0.2s;
+  -ms-transition: opacity ease-in-out 0.2s;
+  transition: opacity ease-in-out 0.2s;
+  visibility: hidden; }
+
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
