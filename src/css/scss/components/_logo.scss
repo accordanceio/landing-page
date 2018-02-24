@@ -1,0 +1,6 @@
+.logo {
+    &-main {
+        @include font-size(32);
+        width: 200px;
+    }
+}
