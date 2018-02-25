@@ -238,8 +238,9 @@ html {
     width: 100%; } }
 
 .logo-main {
-  font-size: 32px !important;
-  font-size: 2rem !important;
+  font-size: 24px !important;
+  font-size: 1.5rem !important;
+  margin: 0;
   width: 200px; }
 
 img,
@@ -268,6 +269,11 @@ object {
   -webkit-justify-content: space-between;
   justify-content: space-between;
   padding: 10px 20px; }
+
+.hero {
+  background: black;
+  min-height: 500px;
+  width: 100%; }
 
 h1 {
   color: #4834d4; }
