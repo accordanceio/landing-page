@@ -35,6 +35,7 @@ h1 {
 }
 
 h2 {
+    font-family: $font-secondary;
     font-size: 34px;
     font-style: normal;
     font-weight: 400;
@@ -42,6 +43,7 @@ h2 {
 }
 
 h3 {
+    font-family: $font-primary;
     font-size: 26px;
     font-style: normal;
     font-weight: 400;
@@ -49,6 +51,7 @@ h3 {
 }
 
 h4 {
+    font-family: $font-primary;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -56,6 +59,7 @@ h4 {
 }
 
 h5 {
+    font-family: $font-primary;
     font-size: 16px;
     font-style: normal;
     font-weight: normal;
@@ -63,6 +67,7 @@ h5 {
 }
 
 p {
+    font-family: $font-primary;
     font-size: 16px;
     margin: 0 0 $padding/2;
 }

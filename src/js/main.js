@@ -2,13 +2,13 @@
 function anchorLinkHandler(e) {
     const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
 
-    e.preventDefault();
-    const targetID = this.getAttribute("href");
-    const targetAnchor = document.querySelector(targetID);
-    if (!targetAnchor) return;
-    const originalTop = distanceToTop(targetAnchor);
+    // e.preventDefault();
+    // const targetID = this.getAttribute("href");
+    // const targetAnchor = document.querySelector(targetID);
+    // if (!targetAnchor) return;
+    // const originalTop = distanceToTop(targetAnchor);
 
-    window.scrollBy({ top: originalTop - 100, left: 0, behavior: "smooth" });
+    // window.scrollBy({ top: originalTop - 100, left: 0, behavior: "smooth" });
 
     // const checkIfDone = setInterval(function() {
     //     const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
@@ -19,11 +19,12 @@ function anchorLinkHandler(e) {
     //         clearInterval(checkIfDone);
     //     }
     // }, 100);
+    
 }
 
-const linksToAnchors = document.querySelectorAll('a[href^="#"]');
+// const linksToAnchors = document.querySelectorAll('a[href^="#"]');
 
-linksToAnchors.forEach(each => (each.onclick = anchorLinkHandler));
+// linksToAnchors.forEach(each => (each.onclick = anchorLinkHandler));
 
 
 //typing animation

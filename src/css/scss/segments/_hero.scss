@@ -19,6 +19,7 @@
 
     h2 {
         @include font-size(54);
+        font-family: $font-secondary !important; 
         color: $white;
         font-weight: 500;
         margin-bottom: 40px;
