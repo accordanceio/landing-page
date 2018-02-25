@@ -12,13 +12,14 @@
     text-align: center;
     text-decoration: none;
     text-transform: capitalize;
+    cursor: pointer;
   
     &:hover,
     &:focus {
-      background: $primary-color;
-      border-color: $primary-color;
-      color: #fff;
-      text-decoration: none;
+        background: $primary-color;
+        border-color: $primary-color;
+        color: #fff;
+        text-decoration: none;
     }
   
     &:active {

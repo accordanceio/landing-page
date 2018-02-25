@@ -6,15 +6,26 @@
 
         &-list {
             @include flexbox(inline-flex); 
+            margin: 10px auto;
         }
 
         li {
             margin: 0 10px;
+            padding: 0 10px;
         }
 
         a {
-            color: $green;
+            @include font-size(20);
+            @include transition(all .5s ease);
+            color: lighten($black, 15%);
+            font-weight: 500;
             text-decoration: none;
+            text-shadow: 1px 1px 1px $white;
+
+            &:hover,
+            &:focus {
+                color: $primary-color;
+            }
         }
 
     }

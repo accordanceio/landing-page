@@ -30,7 +30,7 @@ linksToAnchors.forEach(each => (each.onclick = anchorLinkHandler));
 var options = {
   strings: ["Early^1500", "Securely^8000"],
   typeSpeed: 80,
-  startDelay: 2000,
+  startDelay: 1200,
   backSpeed: 40,
   loop: true
 }

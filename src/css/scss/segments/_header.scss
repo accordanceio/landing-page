@@ -1,8 +1,12 @@
 .banner {
     @include flexbox(flex);
     @include justify-content( space-between );
-    padding: 10px 20px;
+    @include transition(all .5s ease);
+    background: $white;
+    border-bottom: 1px solid lighten($black, 10%);
+    padding: 7px 20px;
     position: fixed;
+    max-height: 62px;
     top: 0;
     width: 100%;
 }
