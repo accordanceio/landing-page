@@ -261,6 +261,16 @@ object {
 .nav-main a {
   text-decoration: none; }
 
+.about {
+  background: #4834d4;
+  min-height: 500px;
+  width: 100%; }
+
+.footer {
+  background: #aaa;
+  min-height: 200px;
+  width: 100%; }
+
 .banner {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -271,7 +281,27 @@ object {
   padding: 10px 20px; }
 
 .hero {
-  background: black;
+  background: #badc58;
+  min-height: 400px;
+  width: 100%; }
+
+.mission {
+  background: #6ab04c;
+  min-height: 500px;
+  width: 100%; }
+
+.process {
+  background: #22a6b3;
+  min-height: 500px;
+  width: 100%; }
+
+.reminder {
+  background: #130f40;
+  min-height: 500px;
+  width: 100%; }
+
+.valueprop {
+  background: #7ed6df;
   min-height: 500px;
   width: 100%; }
 
