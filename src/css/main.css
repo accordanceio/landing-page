@@ -376,7 +376,16 @@ object {
   background: #130f40;
   min-height: 500px;
   padding: 20px;
+  text-align: center;
   width: 100%; }
+
+.backup-top {
+  font-size: 48px !important;
+  font-size: 3rem !important;
+  background: #fff;
+  padding: 10px 20px 0;
+  border-radius: 50%;
+  text-decoration: none; }
 
 .valueprop {
   background: #7ed6df;
