@@ -1,8 +1,7 @@
 //smooth scrolling
 var scroll = new SmoothScroll('a[href*="#"]',{
-    // Speed & Easing
-	speed: 500, // Integer. How fast to complete the scroll in milliseconds
-	offset: 100 // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
+	speed: 500, 
+    offset: 100
 });
 
 //typing animation
