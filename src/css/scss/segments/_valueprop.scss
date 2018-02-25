@@ -1,6 +1,26 @@
 .valueprop {
-    background: $teal;
-    min-height: 500px;
+    background: lighten($primary-color, 55%);
     padding: 20px;
     width: 100%;
+
+    &-offering {
+        @include flexbox(inline-flex); 
+        @include flex-wrap(wrap);
+        margin: 35px auto 20px;
+        padding: 0 10px;
+
+        &-element {
+            margin: 0 auto;
+            padding: 20px;
+            width: 33.33%;
+        }
+
+        &-logo {
+            @include flexbox(flex); 
+            @include align-items(center);
+            height: 120px;
+            margin: 15px auto;
+            width: 80%;
+        }
+    }
 }
