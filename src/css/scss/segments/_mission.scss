@@ -3,4 +3,24 @@
     min-height: 500px;
     padding: 20px;
     width: 100%;
+
+
+
+    &-infographic {
+        @include flexbox(inline-flex); 
+        margin: 20px auto 0;
+        padding: 20px 10px;
+
+        &-element {
+            padding: 20px;
+        }
+
+        &-logo {
+            background-color: lighten($primary-color, 20%);
+            border-radius: 50%;
+            height: 100px;
+            margin: 30px auto;
+            width: 100px;
+        }
+    }
 }
