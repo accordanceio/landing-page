@@ -192,6 +192,30 @@ h3 {
     Flexbox Mixins
 
 --------------------------------------------------------------------- */
+@keyframes gradients {
+  0% {
+    background-position: 0 0; }
+  25% {
+    background-position: 50% 0; }
+  50% {
+    background-position: 90% 0; }
+  60% {
+    background-position: 60%; }
+  75% {
+    background-position: 40%; }
+  100% {
+    background-position: 0 0; } }
+
+.gradient {
+  align-items: center;
+  background-image: linear-gradient(to right, #fc00ff, #00dbde);
+  background-size: 600%;
+  background-position: 0 0;
+  /* Animation */
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-name: gradients; }
+
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -401,6 +425,12 @@ object {
     .mission-infographic-element {
       padding: 20px; }
     .mission-infographic-logo {
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
       background-color: #36d17d;
       border-radius: 50%;
       height: 100px;

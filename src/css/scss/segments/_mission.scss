@@ -16,6 +16,8 @@
         }
 
         &-logo {
+            @include flexbox(flex); 
+            @include align-items(center);
             background-color: lighten($primary-color, 20%);
             border-radius: 50%;
             height: 100px;
