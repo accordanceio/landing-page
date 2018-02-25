@@ -9,6 +9,17 @@
     font-style: normal; 
 }
 
+@font-face {
+    font-family: 'Cambria';
+    src: 
+    url('/../../fonts/Cambria.eot?#iefix') format('embedded-opentype'),  
+    url('/../../fonts/Cambria.woff') format('woff'), 
+    url('/../../fonts/Cambria.ttf')  format('truetype'), 
+    url('/../../fonts/Cambria.svg#Cambria') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
 
 @font-face {
     font-family: 'ProximaNova-Regular';

@@ -5,6 +5,12 @@
   font-style: normal; }
 
 @font-face {
+  font-family: 'Cambria';
+  src: url("/../../fonts/Cambria.eot?#iefix") format("embedded-opentype"), url("/../../fonts/Cambria.woff") format("woff"), url("/../../fonts/Cambria.ttf") format("truetype"), url("/../../fonts/Cambria.svg#Cambria") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
   font-family: 'ProximaNova-Regular';
   src: url("/../../ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("/../../ProximaNova-Regular.otf") format("opentype"), url("/../../ProximaNova-Regular.woff") format("woff"), url("ProximaNova-Regular.ttf") format("truetype"), url("/../../ProximaNova-Regular.svg#ProximaNova-Regular") format("svg");
   font-weight: normal;
@@ -85,7 +91,7 @@ h1 {
   margin: 0 0 25px; }
 
 h2 {
-  font-family: "Cambria-Bold", serif;
+  font-family: "Cambria", serif;
   font-size: 34px;
   font-style: normal;
   font-weight: 400;
@@ -277,21 +283,21 @@ object {
   display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
   display: inline-flex;
-  margin: 10px auto; }
+  margin: 11px auto; }
 
 .nav-main li {
   margin: 0 10px;
   padding: 0 10px; }
 
 .nav-main a {
-  font-size: 20px !important;
-  font-size: 1.25rem !important;
+  font-size: 18px !important;
+  font-size: 1.125rem !important;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   transition: all 0.5s ease;
   color: #373737;
-  font-family: "Cambria-Bold", serif;
+  font-family: "Cambria", serif;
   font-weight: 500;
   text-decoration: none;
   text-shadow: 1px 1px 1px #fff; }
@@ -371,10 +377,12 @@ object {
     -ms-transition: all 0.5s ease;
     transition: all 0.5s ease;
     background: rgba(30, 130, 76, 0.8);
+    border: 1px solid #111;
+    box-shadow: 0 0 3px #fff;
     color: #fff;
+    font-family: "Cambria", serif !important;
     padding: 14px 30px 24px;
-    height: 60px;
-    height: none; }
+    height: 62px; }
     .hero .btn:hover {
       background: #fff;
       color: #1E824C; }

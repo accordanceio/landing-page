@@ -19,7 +19,7 @@
 
     h2 {
         @include font-size(54);
-        font-family: $font-secondary !important; 
+        font-family: $font-secondary-bold !important; 
         color: $white;
         font-weight: 500;
         margin-bottom: 40px;
@@ -31,10 +31,12 @@
         @include font-size(24);
         @include transition(all .5s ease);
         background: rgba(30, 130, 76, .8);
+        border: 1px solid $black;
+        box-shadow: 0 0 3px $white;
         color: $white;
+        font-family: $font-secondary !important;
         padding: 14px 30px 24px;
-        height: 60px;
-        height: none;
+        height: 62px;
 
         &:hover {
             background: $white;

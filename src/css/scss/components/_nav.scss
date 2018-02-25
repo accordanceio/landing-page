@@ -6,7 +6,7 @@
 
         &-list {
             @include flexbox(inline-flex); 
-            margin: 10px auto;
+            margin: 11px auto;
         }
 
         li {
@@ -15,7 +15,7 @@
         }
 
         a {
-            @include font-size(20);
+            @include font-size(18);
             @include transition(all .5s ease);
             color: lighten($black, 15%);
             font-family: $font-secondary;
