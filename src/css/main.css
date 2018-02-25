@@ -260,7 +260,7 @@ object {
 .nav-main a {
   text-decoration: none; }
 
-.header {
+.banner {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
