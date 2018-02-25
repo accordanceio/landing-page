@@ -1,15 +1,46 @@
 .reminder {
-    background: $darkpurple;
-    min-height: 500px;
+    background: $white;
     padding: 20px;
     text-align: center;
     width: 100%;
+
+    &-backup {
+        height: 60px;
+    }
+
+    .btn {
+        @include font-size(24);
+        @include transition(all .5s ease);
+        background: rgba(30, 130, 76, .8);
+        border: 1px solid $black;
+        box-shadow: 0 0 3px $white;
+        color: $white;
+        font-family: $font-secondary !important;
+        padding: 14px 30px 24px;
+        height: 62px;
+
+        &:hover {
+            background: $white;
+            color: $primary-color;
+        }
+    }
 }
 
 .backup-top {
-    @include font-size(48);
-    background: $white;
+    @include transition(all .5s ease);
+    @include font-size(24);
+    display: block;
+    float: right;
+    background: lighten($tertiary-color, 40%);
     padding: 10px 20px 0;
     border-radius: 50%;
     text-decoration: none;
+    height: 60px;
+    width: 65px;
+
+    &:hover,
+    &:focus {
+       color: lighten($tertiary-color, 40%); 
+       background: $primary-color;
+    }
 }

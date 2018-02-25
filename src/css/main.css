@@ -488,19 +488,48 @@ object {
     z-index: -1; }
 
 .reminder {
-  background: #130f40;
-  min-height: 500px;
+  background: #fff;
   padding: 20px;
   text-align: center;
   width: 100%; }
+  .reminder-backup {
+    height: 60px; }
+  .reminder .btn {
+    font-size: 24px !important;
+    font-size: 1.5rem !important;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background: rgba(30, 130, 76, 0.8);
+    border: 1px solid #111;
+    box-shadow: 0 0 3px #fff;
+    color: #fff;
+    font-family: "Cambria", serif !important;
+    padding: 14px 30px 24px;
+    height: 62px; }
+    .reminder .btn:hover {
+      background: #fff;
+      color: #1E824C; }
 
 .backup-top {
-  font-size: 48px !important;
-  font-size: 3rem !important;
-  background: #fff;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  font-size: 24px !important;
+  font-size: 1.5rem !important;
+  display: block;
+  float: right;
+  background: #f0e8be;
   padding: 10px 20px 0;
   border-radius: 50%;
-  text-decoration: none; }
+  text-decoration: none;
+  height: 60px;
+  width: 65px; }
+  .backup-top:hover, .backup-top:focus {
+    color: #f0e8be;
+    background: #1E824C; }
 
 .valueprop {
   background: #c7f2db;
