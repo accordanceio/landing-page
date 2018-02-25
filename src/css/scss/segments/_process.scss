@@ -1,6 +1,54 @@
 .process {
-    background: $bluegreen;
-    min-height: 500px;
+    background: $white;
     padding: 20px;
     width: 100%;
+
+    &-outline {
+        @include flexbox(flex); 
+        @include flex-direction(column);
+        margin: 35px auto 20px;
+        padding: 0 10px;
+
+        &-element {
+            background: $white;
+            border: 2px solid $secondary-color;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 40px auto 60px;
+            min-height: 160px;
+            max-width: 540px;
+            width: 100%;
+            z-index: 90;
+
+            &:last-child {
+                margin: 40px auto 40px;
+            }
+        }
+
+        &-icons {
+            @include flexbox(flex); 
+            @include align-items(center);
+            background-color: lighten($primary-color, 20%);
+            border: 2px solid $secondary-color;
+            border-radius: 50%;
+            height: 100px;
+            margin: -65px auto 15px;
+            width: 100px;
+        }
+
+        p {
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+
+    &-segment {
+        background: $secondary-color;
+        height: 180%;
+        left: 50%;
+        margin-left: -5px;
+        position: absolute;
+        width: 10px;
+        z-index: -1;
+    }
 }

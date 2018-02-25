@@ -18,6 +18,7 @@
         &-logo {
             @include flexbox(flex); 
             @include align-items(center);
+            border: 2px solid $secondary-color;
             height: 120px;
             margin: 15px auto;
             width: 80%;

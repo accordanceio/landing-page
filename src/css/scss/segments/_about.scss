@@ -1,6 +1,5 @@
 .about {
-    background: $blue;
-    min-height: 500px;
-    padding: 20px;
+    background: lighten($secondary-color, 60%);
+    padding: 20px 20px 40px;
     width: 100%;
 }
