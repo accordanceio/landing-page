@@ -153,6 +153,11 @@ li {
   ol {
     font-size: 14px; } }
 
+h1,
+h2,
+h3 {
+  text-align: center; }
+
 .clearfix:after,
 .group:after {
   content: " ";
@@ -259,16 +264,19 @@ object {
   margin: 0 10px; }
 
 .nav-main a {
+  color: #fff;
   text-decoration: none; }
 
 .about {
   background: #4834d4;
   min-height: 500px;
+  padding: 20px;
   width: 100%; }
 
 .footer {
   background: #aaa;
-  min-height: 200px;
+  min-height: 130px;
+  padding: 20px;
   width: 100%; }
 
 .banner {
@@ -278,31 +286,39 @@ object {
   -ms-flex-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  padding: 10px 20px; }
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%; }
 
 .hero {
   background: #badc58;
   min-height: 400px;
+  padding: 20px;
   width: 100%; }
 
 .mission {
   background: #6ab04c;
   min-height: 500px;
+  padding: 20px;
   width: 100%; }
 
 .process {
   background: #22a6b3;
   min-height: 500px;
+  padding: 20px;
   width: 100%; }
 
 .reminder {
   background: #130f40;
   min-height: 500px;
+  padding: 20px;
   width: 100%; }
 
 .valueprop {
   background: #7ed6df;
   min-height: 500px;
+  padding: 20px;
   width: 100%; }
 
 h1 {
