@@ -36,6 +36,7 @@
         "run-sequence": "^2.2.1"
     },
     "dependencies": {
-        "gulp-cssnano": "^2.1.2"
+        "gulp-cssnano": "^2.1.2",
+        "typed.js": "^2.0.6"
     }
 }

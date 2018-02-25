@@ -24,3 +24,15 @@ function anchorLinkHandler(e) {
 const linksToAnchors = document.querySelectorAll('a[href^="#"]');
 
 linksToAnchors.forEach(each => (each.onclick = anchorLinkHandler));
+
+
+//typing animation
+var options = {
+  strings: ["Early^1500", "Securely^8000"],
+  typeSpeed: 80,
+  startDelay: 2000,
+  backSpeed: 40,
+  loop: true
+}
+
+var typed = new Typed(".typing", options);
