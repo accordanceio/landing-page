@@ -1,6 +1,24 @@
 .hero {
-    background: $lime;
-    min-height: 400px;
+    @include flexbox(flex);
+    @include align-items(center);
+    @include justify-content(center);
+    background: $white;
+    min-height: 100vh;
     padding: 20px;
+    text-align: center;
     width: 100%;
+
+    background: url(../../images/hero_background.jpg) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    h2 {
+        @include font-size(54);
+        color: $white;
+        margin-top: -90px;
+        text-shadow: -1px 2px 7px $black;
+
+    }
 }

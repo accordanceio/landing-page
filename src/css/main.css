@@ -264,7 +264,7 @@ object {
   margin: 0 10px; }
 
 .nav-main a {
-  color: #fff;
+  color: #6ab04c;
   text-decoration: none; }
 
 .about {
@@ -292,10 +292,31 @@ object {
   width: 100%; }
 
 .hero {
-  background: #badc58;
-  min-height: 400px;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  background: #fff;
+  min-height: 100vh;
   padding: 20px;
-  width: 100%; }
+  text-align: center;
+  width: 100%;
+  background: url(../../images/hero_background.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .hero h2 {
+    font-size: 54px !important;
+    font-size: 3.375rem !important;
+    color: #fff;
+    margin-top: -90px;
+    text-shadow: -1px 2px 7px #111; }
 
 .mission {
   background: #6ab04c;
