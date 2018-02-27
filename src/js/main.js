@@ -4,6 +4,31 @@ var scroll = new SmoothScroll('a[href*="#"]',{
     offset: 100
 });
 
+//scroll reveal
+window.sr = ScrollReveal();
+sr.reveal('.mission-infographic-element', { 
+    duration: 1400,
+    easing: 'linear' 
+}, 50);
+
+sr.reveal('.valueprop-offering-element', {
+     duration: 1400 },
+50);
+
+sr.reveal('.process-outline-element', { 
+    duration: 600 ,
+    origin: 'top',
+    distance: '20px',
+    easing: 'linear' 
+});
+
+sr.reveal('.process-segment', { 
+    duration: 600 ,
+    origin: 'top',
+    easing: 'linear' 
+});
+
+
 //typing animation
 var options = {
   strings: ["Early^1500", "Securely^8000"],
