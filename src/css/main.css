@@ -527,6 +527,7 @@ object {
       text-align: center; }
   .process-segment {
     background: #3D1265;
+    border-radius: 20px;
     height: 170%;
     left: 50%;
     margin-top: 90px;
