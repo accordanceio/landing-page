@@ -1,0 +1,22 @@
+version: 2
+
+jobs:
+  build:
+    docker:
+      - image: circleci/node:4.8.2
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      - restore_cache:
+          key: dependency-cache
+
+      - run: npm install
+
+      - save_cache:
+          key: dependency-cache
+          paths:
+            - ./node_modules
+      - run: gulp build
