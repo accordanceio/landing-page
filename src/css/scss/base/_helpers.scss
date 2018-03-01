@@ -1,5 +1,9 @@
 @import "_mixins.scss";
 
+* {
+    box-sizing: border-box;
+}
+
 .hide {
     @include visually-hidden();
 }

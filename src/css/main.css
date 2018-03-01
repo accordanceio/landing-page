@@ -27,6 +27,9 @@
     Flexbox Mixins
 
 --------------------------------------------------------------------- */
+* {
+  box-sizing: border-box; }
+
 .hide {
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);

@@ -7,12 +7,12 @@ var scroll = new SmoothScroll('a[href*="#"]',{
 //scroll reveal
 window.sr = ScrollReveal();
 sr.reveal('.mission-infographic-element', { 
-    duration: 1400,
+    duration: 1000,
     easing: 'linear' 
 }, 50);
 
 sr.reveal('.valueprop-offering-element', {
-     duration: 1400 },
+     duration: 1000 },
 50);
 
 sr.reveal('.process-outline-element', { 
