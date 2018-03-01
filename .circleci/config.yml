@@ -19,4 +19,9 @@ jobs:
           key: dependency-cache
           paths:
             - ./node_modules
+      - run:
+          name: Add NPM bin to path
+          command: |
+            echo 'export PATH=$PATH:$(npm bin)' >> $BASH_ENV
+            source /home/circleci/.bashrc
       - run: $(npm bin)/gulp build
