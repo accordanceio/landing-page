@@ -10,15 +10,15 @@ jobs:
     steps:
       - checkout
 
-      - restore_cache:
-          key: dependency-cache
+#      - restore_cache:
+#          key: dependency-cache
 
       - run: npm install
 
-      - save_cache:
-          key: dependency-cache
-          paths:
-            - ./node_modules
+#      - save_cache:
+#          key: dependency-cache
+#          paths:
+#            - ./node_modules
       - run:
           name: Add NPM bin to path
           command: |
