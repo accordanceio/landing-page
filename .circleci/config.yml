@@ -24,4 +24,4 @@ jobs:
           command: |
             echo 'export PATH=$PATH:$(npm bin)' >> $BASH_ENV
             source /home/circleci/.bashrc
-      - run: $(npm bin)/gulp build
+      - run: gulp build
