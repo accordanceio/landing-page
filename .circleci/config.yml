@@ -25,3 +25,4 @@ jobs:
             echo 'export PATH=$PATH:$(npm bin)' >> $BASH_ENV
             source /home/circleci/.bashrc
       - run: gulp build
+      - run: ./scripts/deploy-ghpages.sh
