@@ -3,7 +3,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:4.8.2
+      - image: circleci/node:6
 
     working_directory: ~/repo
 
@@ -13,7 +13,6 @@ jobs:
       - restore_cache:
           key: dependency-cache
 
-      - run: sudo npm install -g npm@5.6.0
       - run: npm install
 
       - save_cache:
