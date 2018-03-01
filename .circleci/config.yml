@@ -19,4 +19,4 @@ jobs:
           key: dependency-cache
           paths:
             - ./node_modules
-      - run: npx gulp build
+      - run: $(npm bin)/gulp build
