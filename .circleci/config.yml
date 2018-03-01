@@ -13,6 +13,7 @@ jobs:
       - restore_cache:
           key: dependency-cache
 
+      - run: npm install -g npm@5.6.0
       - run: npm install
 
       - save_cache:
