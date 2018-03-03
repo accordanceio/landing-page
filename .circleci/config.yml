@@ -1,12 +1,14 @@
 version: 2
 
+defaults: &defaults
+  working_directory: ~/repo
+  docker:
+    - image: circleci/node:6
+
+
 jobs:
   build:
-    docker:
-      - image: circleci/node:6
-
-    working_directory: ~/repo
-
+    <<: *defaults
     steps:
       - checkout
 
@@ -25,4 +27,27 @@ jobs:
             echo 'export PATH=$PATH:$(npm bin)' >> $BASH_ENV
             source /home/circleci/.bashrc
       - run: gulp build
+      - persist_to_workspace:
+          root: dist
+          paths:
+            - .
+
+  deploy:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/repo/dist
+      - ls
       - run: ./scripts/deploy-ghpages.sh
+
+workflows:
+  version: 2
+  build-and-deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branchs:
+              only: master
