@@ -7,9 +7,9 @@ var scroll = new SmoothScroll('a[href*="#"]',{
 //scroll reveal
 window.sr = ScrollReveal();
 sr.reveal('.mission-infographic-element', { 
-    duration: 1000,
+    duration: 500,
     easing: 'linear' 
-}, 50);
+}, 40);
 
 sr.reveal('.valueprop-offering-element', {
      duration: 1000 },

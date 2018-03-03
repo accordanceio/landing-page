@@ -18,7 +18,7 @@
     background-size: cover;
 
     h2 {
-        @include font-size(58);
+        @include font-size(56);
         font-family: $font-secondary; 
         color: $white;
         font-weight: 700 !important;
