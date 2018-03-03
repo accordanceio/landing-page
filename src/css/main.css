@@ -431,7 +431,7 @@ object {
   padding: 20px;
   text-align: center;
   width: 100%;
-  background: url(../../images/hero_background.jpg) no-repeat center center;
+  background: url(../images/hero_background.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
