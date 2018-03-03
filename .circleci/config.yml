@@ -27,9 +27,10 @@ jobs:
             source /home/circleci/.bashrc
       - run: gulp build
       - persist_to_workspace:
-          root: dist
+          root: .
           paths:
-            - .
+            - dist
+            - scripts
 
   deploy:
     <<: *defaults
