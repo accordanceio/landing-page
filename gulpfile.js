@@ -57,9 +57,18 @@ gulp.task('images', function(){
     .pipe(gulp.dest('dist/images'))
 });
 
+// favicon
+gulp.task('favicon', function(){
+    return gulp.src('src/favicon/**/*.+(png|jpg)')
+    .pipe(cache(imagemin({
+        interlaced: true
+      })))
+    .pipe(gulp.dest('dist/favicon'))
+});
+
 // build
 gulp.task('build', function (callback) {
-    runSequence(['sass','useref', 'images'],
+    runSequence(['sass','useref', 'images', 'favicon'],
       callback
     )
 })
