@@ -29,11 +29,12 @@ jobs:
       - persist_to_workspace:
           root: .
           paths:
-            - .
+            - dist
 
   deploy:
     <<: *defaults
     steps:
+      - checkout
       - attach_workspace:
           at: ~/repo
       - run: ls
