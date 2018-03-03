@@ -44,4 +44,10 @@ workflows:
   build-and-deploy:
     jobs:
       - build2
-      - deploy
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only:
+                - master
