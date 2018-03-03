@@ -11,7 +11,7 @@ set -e
 pwd
 remote=$(git config remote.origin.url)
 
-# make a directory to put the gp-pages branch
+# make a directory to put the gh-pages branch
 mkdir gh-pages-branch
 cd gh-pages-branch
 # now lets setup a new repo so we can update the gh-pages branch
