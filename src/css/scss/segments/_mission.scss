@@ -3,13 +3,17 @@
     padding: 20px;
     width: 100%;
 
+    &-info {
+        margin: 10px auto 20px !important;
+    }
+
     &-infographic {
         @include flexbox(inline-flex); 
-        margin: 35px auto 20px;
+        margin: 20px auto;
         padding: 0 10px;
 
         &-element {
-            padding: 20px;
+            padding: 10px 20px;
         }
 
         &-logo {

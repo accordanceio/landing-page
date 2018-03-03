@@ -310,7 +310,8 @@ object {
   display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
   display: inline-flex;
-  margin: 11px auto; }
+  margin: 11px auto;
+  padding: 0; }
 
 .nav-main li {
   margin: 0 10px;
@@ -465,14 +466,16 @@ object {
   background: #fff;
   padding: 20px;
   width: 100%; }
+  .mission-info {
+    margin: 10px auto 20px !important; }
   .mission-infographic {
     display: -ms-inline-flexbox;
     display: -webkit-inline-flex;
     display: inline-flex;
-    margin: 35px auto 20px;
+    margin: 20px auto;
     padding: 0 10px; }
     .mission-infographic-element {
-      padding: 20px; }
+      padding: 10px 20px; }
     .mission-infographic-logo {
       display: -ms-flexbox;
       display: -webkit-flex;
