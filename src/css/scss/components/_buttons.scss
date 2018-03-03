@@ -85,7 +85,7 @@
   // Responsive styles if needed
   // @include responsive($big-break) {
   // }
-  @include responsive($small-break) {
+  @include responsive($break-sm) {
     .btn {
       display: block;
       margin-bottom: 10px;
