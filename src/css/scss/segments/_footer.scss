@@ -2,7 +2,7 @@
     @include flexbox(flex); 
     @include align-items(center);
     @include justify-content(space-between);
-    background: $primary-color;
+    background: $color-primary;
     min-height: 130px;
     padding: 20px;
     width: 100%;
@@ -23,7 +23,7 @@
         text-decoration: none;
 
         &:hover {
-            color: $tertiary-color;
+            color: $color-tertiary;
         }
     }
 

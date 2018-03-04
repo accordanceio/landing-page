@@ -347,9 +347,6 @@ object {
     padding: 30px 20px 18px;
     text-decoration: none;
     width: 100%; }
-    .nav a:hover, .nav a:focus {
-      color: #fff;
-      background: #1E824C; }
 
 @media only screen and (max-width: 800px) {
   .nav-list {
@@ -362,11 +359,12 @@ object {
     position: absolute;
     right: 0;
     top: 60px;
-    padding-right: 40px;
     z-index: 10; }
     .nav-list:not(.open) {
       visibility: hidden; }
     .nav-list.open {
+      background: rgba(255, 255, 255, 0.8);
+      min-width: 150px;
       visibility: visible; }
       .nav-list.open .nav-item {
         animation-duration: 0.5s;
@@ -379,24 +377,22 @@ object {
     text-align: right;
     transform: translateX(-250px); }
     .nav-item:first-child {
-      padding-top: 71px; }
+      padding-top: 30px; }
     .nav-item:not(.open) {
       animation-duration: 0.5s;
       animation-fill-mode: both;
       animation-name: slideOutLeft; }
   .nav-link {
     background: transparent;
-    border-right: white solid 2px;
     color: #2b2b2b;
     font-size: 22px;
     font-weight: 400;
-    margin-right: 30px;
     text-decoration: none;
     transition: all 0.5s ease;
     width: auto; }
     .nav-link:hover, .nav-link--active {
-      border-right: #2b2b2b solid 2px;
-      padding-right: 30px; }
+      border-right: #1E824C solid 7px;
+      padding-right: 40px; }
   .nav-menu {
     background: transparent;
     border: transparent solid 2px;

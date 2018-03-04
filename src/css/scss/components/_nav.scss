@@ -26,11 +26,11 @@
         text-decoration: none;
         width: 100%;
 
-        &:hover,
-        &:focus {
-            color: $white;
-            background: $primary-color;
-        }
+        // &:hover,
+        // &:focus {
+        //     color: $white;
+        //     background: $color-primary;
+        // }
     }
 
 }
@@ -38,14 +38,13 @@
 //Nav Variables
 $brgr-height: 56px;
 $brgr-border-width: 2px;
-$brgr-margin: 30px;
+$brgr-margin: 40px;
 $brgr-bun-width: 25px;
 $brgr-bun-height: $brgr-border-width;
 $brgr-font-size: 22px;
 $brgr-text-pad: $brgr-margin;
 $brgr-transition-speed: .5s;
 $brgr-transition: all $brgr-transition-speed ease;
-$brgr-text-pad-top: ($brgr-margin / 2 + $brgr-height); 
 
 @media only screen and (max-width: $break-lg) {
     .nav {
@@ -55,7 +54,6 @@ $brgr-text-pad-top: ($brgr-margin / 2 + $brgr-height);
             position: absolute;
             right: 0;
             top: 60px;
-            padding-right: 40px;
             z-index: 10;
 
             &:not(.open) {
@@ -63,6 +61,8 @@ $brgr-text-pad-top: ($brgr-margin / 2 + $brgr-height);
             }
     
             &.open {
+                background: rgba(255, 255, 255, .8);
+                min-width: 150px;
                 visibility: visible;
     
                 .nav-item {
@@ -81,7 +81,7 @@ $brgr-text-pad-top: ($brgr-margin / 2 + $brgr-height);
             transform: translateX(-250px);
     
             &:first-child {
-                padding-top: $brgr-text-pad-top;
+                padding-top: 30px;
             }
     
             &:not(.open){
@@ -93,18 +93,16 @@ $brgr-text-pad-top: ($brgr-margin / 2 + $brgr-height);
 
         &-link {
             background: transparent;
-            border-right: white solid $brgr-border-width;
             color: lighten($black, 10%);
             font-size: $brgr-font-size;
             font-weight: 400;
-            margin-right: $brgr-margin;
             text-decoration: none;
             transition: $brgr-transition;
             width: auto;
           
             &:hover,
             &--active {
-              border-right: lighten($black, 10%) solid $brgr-border-width;
+              border-right: $color-primary solid 7px;
               padding-right: $brgr-text-pad;
             }
         }

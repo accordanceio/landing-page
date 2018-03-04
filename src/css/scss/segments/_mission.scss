@@ -19,8 +19,8 @@
         &-logo {
             @include flexbox(flex); 
             @include align-items(center);
-            border: 2px solid $secondary-color;
-            background-color: lighten($primary-color, 20%);
+            border: 2px solid $color-secondary;
+            background-color: lighten($color-primary, 20%);
             border-radius: 50%;
             height: 120px;
             margin: 15px auto;

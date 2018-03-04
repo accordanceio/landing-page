@@ -21,7 +21,7 @@
 
         &:hover {
             background: $white;
-            color: $primary-color;
+            color: $color-primary;
         }
     }
 }
@@ -31,7 +31,7 @@
     @include font-size(24);
     display: block;
     float: right;
-    background: lighten($tertiary-color, 40%);
+    background: lighten($color-tertiary, 40%);
     padding: 10px 20px 0;
     border-radius: 50%;
     text-decoration: none;
@@ -40,7 +40,7 @@
 
     &:hover,
     &:focus {
-       color: lighten($tertiary-color, 40%); 
-       background: $primary-color;
+       color: lighten($color-tertiary, 40%); 
+       background: $color-primary;
     }
 }
