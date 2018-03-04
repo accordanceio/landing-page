@@ -35,6 +35,18 @@
 
 }
 
+//Nav Variables
+$brgr-height: 60px;
+$brgr-border-width: 2px;
+$brgr-margin: 30px;
+$brgr-bun-width: 25px;
+$brgr-bun-height: $brgr-border-width;
+$brgr-font-size: 22px;
+$brgr-text-pad: $brgr-margin;
+$brgr-transition-speed: .5s;
+$brgr-transition: all $brgr-transition-speed ease;
+$brgr-text-pad-top: ($brgr-margin / 2 + $brgr-height); 
+
 @media only screen and (max-width: $break-lg) {
     .nav {
         &-list{
