@@ -385,8 +385,35 @@ object {
       animation-duration: 0.5s;
       animation-fill-mode: both;
       animation-name: slideOutLeft; }
-  .nav a {
-    padding: 17px 20px; } }
+  .nav-link {
+    background: transparent;
+    border-right: white solid 2px;
+    color: #2b2b2b;
+    font-size: 22px;
+    font-weight: 400;
+    margin-right: 30px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    width: auto; }
+    .nav-link:hover, .nav-link--active {
+      border-right: #2b2b2b solid 2px;
+      padding-right: 30px; }
+  .nav-menu {
+    background: transparent;
+    border: transparent solid 2px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    height: 60px;
+    padding-left: 15px;
+    padding-top: 18px;
+    position: relative;
+    transition: all 0.5s ease;
+    user-select: none;
+    width: 60px;
+    z-index: 20; }
+    .nav-menu:hover {
+      border: #2b2b2b solid 2px; } }
 
 @keyframes slideInLeft {
   0% {
