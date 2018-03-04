@@ -334,7 +334,7 @@ object {
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     transition: all 0.5s ease; }
-  .nav a {
+  .nav-link {
     font-size: 20px !important;
     font-size: 1.25rem !important;
     -webkit-transition: all 0.5s ease;
@@ -364,7 +364,7 @@ object {
       visibility: hidden; }
     .nav-list.open {
       background: rgba(255, 255, 255, 0.8);
-      min-width: 150px;
+      min-width: 180px;
       visibility: visible; }
       .nav-list.open .nav-item {
         animation-duration: 0.5s;
@@ -387,11 +387,12 @@ object {
     color: #2b2b2b;
     font-size: 22px;
     font-weight: 400;
+    padding: 30px 20px 18px 50px;
     text-decoration: none;
     transition: all 0.5s ease;
     width: auto; }
     .nav-link:hover, .nav-link--active {
-      border-right: #1E824C solid 7px;
+      border-right: #1E824C solid 10px;
       padding-right: 40px; }
   .nav-menu {
     background: transparent;

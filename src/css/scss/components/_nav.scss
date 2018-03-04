@@ -16,7 +16,7 @@
         @include transition(all .5s ease);
     }
 
-    a {
+    &-link {
         @include font-size(20);
         @include transition(all .5s ease);
         color: lighten($black, 15%);
@@ -62,7 +62,7 @@ $brgr-transition: all $brgr-transition-speed ease;
     
             &.open {
                 background: rgba(255, 255, 255, .8);
-                min-width: 150px;
+                min-width: 180px;
                 visibility: visible;
     
                 .nav-item {
@@ -96,13 +96,14 @@ $brgr-transition: all $brgr-transition-speed ease;
             color: lighten($black, 10%);
             font-size: $brgr-font-size;
             font-weight: 400;
+            padding: 30px 20px 18px 50px;
             text-decoration: none;
             transition: $brgr-transition;
             width: auto;
           
             &:hover,
             &--active {
-              border-right: $color-primary solid 7px;
+              border-right: $color-primary solid 10px;
               padding-right: $brgr-text-pad;
             }
         }
