@@ -109,8 +109,8 @@ $brgr-transition: all $brgr-transition-speed ease;
         }
 
         &-menu {
-            background: transparent;
-            border: rgba(0, 0, 0, 0) solid $brgr-border-width;
+            background: rgba(30, 130, 76, .75);
+            border: rgba(0, 0, 0, .5) solid $brgr-border-width;
             border-radius: 50%;
             cursor: pointer;
             display: inline-block;

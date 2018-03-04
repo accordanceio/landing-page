@@ -395,8 +395,8 @@ object {
       border-right: #1E824C solid 10px;
       padding-right: 40px; }
   .nav-menu {
-    background: transparent;
-    border: transparent solid 2px;
+    background: rgba(30, 130, 76, 0.75);
+    border: rgba(0, 0, 0, 0.5) solid 2px;
     border-radius: 50%;
     cursor: pointer;
     display: inline-block;
