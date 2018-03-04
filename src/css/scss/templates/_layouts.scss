@@ -3,6 +3,7 @@ body {
 }
 
 .section {
+    @include transition(all .5s ease);  
     margin: 0 auto;
 
     h2 {

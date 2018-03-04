@@ -1,4 +1,5 @@
 .mission {
+    @include transition(all .5s ease);    
     background: $white;
     padding: 20px;
     width: 100%;
@@ -7,7 +8,7 @@
         margin: 10px auto 20px !important;
     }
 
-    &-infographic {
+    &-infographic {      
         @include flexbox(inline-flex); 
         margin: 20px auto;
         padding: 0 10px;
@@ -28,3 +29,12 @@
         }
     }
 }
+
+@media only screen and (max-width: $break-lg) {
+    .mission {
+        &-infographic {
+            @include flexbox(flex);
+            @include flex-direction(column);
+        }
+    }
+ }

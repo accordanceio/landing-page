@@ -583,6 +583,10 @@ object {
       color: #1E824C; }
 
 .mission {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   background: #fff;
   padding: 20px;
   width: 100%; }
@@ -609,6 +613,15 @@ object {
       height: 120px;
       margin: 15px auto;
       width: 120px; }
+
+@media only screen and (max-width: 800px) {
+  .mission-infographic {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column; } }
 
 .process {
   background: #fff;
@@ -720,6 +733,10 @@ object {
     margin: 35px auto 20px;
     padding: 0 10px; }
     .valueprop-offering-element {
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      transition: all 0.5s ease;
       margin: 0 auto;
       padding: 20px;
       width: 33.33%; }
@@ -735,6 +752,14 @@ object {
       margin: 15px auto;
       width: 80%; }
 
+@media only screen and (max-width: 800px) {
+  .valueprop-offering-element {
+    width: 50%; } }
+
+@media only screen and (max-width: 600px) {
+  .valueprop-offering-element {
+    width: 100%; } }
+
 h1 {
   color: #1E824C; }
 
@@ -742,6 +767,10 @@ body {
   margin: 0; }
 
 .section {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   margin: 0 auto; }
   .section h2 {
     margin: 15px auto 25px; }
