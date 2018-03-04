@@ -43,3 +43,19 @@
         }
     }
 }
+
+@media only screen and (max-width: $break-lg) {
+    .hero {
+        h2 {
+            @include font-size(44);
+        }
+    }
+}
+
+@media only screen and (max-width: $break-md) {
+    .hero {
+        h2 {
+            @include font-size(34);
+        }
+    }
+}

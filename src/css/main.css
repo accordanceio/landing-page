@@ -582,6 +582,16 @@ object {
       background: #fff;
       color: #1E824C; }
 
+@media only screen and (max-width: 800px) {
+  .hero h2 {
+    font-size: 44px !important;
+    font-size: 2.75rem !important; } }
+
+@media only screen and (max-width: 600px) {
+  .hero h2 {
+    font-size: 34px !important;
+    font-size: 2.125rem !important; } }
+
 .mission {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
