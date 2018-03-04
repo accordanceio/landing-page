@@ -308,35 +308,53 @@ iframe,
 object {
   max-width: 100%; }
 
-.nav-main {
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center; }
-  .nav-main-list {
-    display: -ms-inline-flexbox;
-    display: -webkit-inline-flex;
-    display: inline-flex;
-    margin: 0 auto;
-    padding: 0; }
-  .nav-main a {
-    font-size: 20px !important;
-    font-size: 1.25rem !important;
+.nav {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  .nav-main {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    color: #373737;
-    font-family: "Noto Serif", serif;
-    font-weight: 300;
-    padding: 30px 20px 18px;
-    text-decoration: none;
-    width: 100%; }
-    .nav-main a:hover, .nav-main a:focus {
-      color: #fff;
-      background: #1E824C; }
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center; }
+    .nav-main-list {
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      display: -ms-inline-flexbox;
+      display: -webkit-inline-flex;
+      display: inline-flex;
+      margin: 0 auto;
+      padding: 0; }
+    .nav-main li {
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
+    .nav-main a {
+      font-size: 20px !important;
+      font-size: 1.25rem !important;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      color: #373737;
+      font-family: "Noto Serif", serif;
+      font-weight: 300;
+      padding: 30px 20px 18px;
+      text-decoration: none;
+      width: 100%; }
+      .nav-main a:hover, .nav-main a:focus {
+        color: #fff;
+        background: #1E824C; }
 
 @media only screen and (max-width: 800px) {
   .nav-main-list {
