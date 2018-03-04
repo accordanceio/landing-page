@@ -4,6 +4,12 @@ var scroll = new SmoothScroll('a[href*="#"]',{
     offset: 100
 });
 
+//nav brgr
+var body = document.body;
+var burgerMenu = document.getElementsByClassName('nav-menu')[0];
+var burgerContain = document.getElementsByClassName('nav-contain')[0];
+var burgerNav = document.getElementsByClassName('nav-list')[0];
+
 //scroll reveal
 window.sr = ScrollReveal();
 sr.reveal('.mission-infographic-element', { 
