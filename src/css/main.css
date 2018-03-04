@@ -329,7 +329,7 @@ object {
     display: inline-flex;
     margin: 0 auto;
     padding: 0; }
-  .nav li {
+  .nav-item {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
@@ -361,11 +361,30 @@ object {
     flex-direction: column;
     background: #fff;
     position: absolute;
+    right: 0;
     top: 60px;
-    right: 0; }
-  .nav li {
+    padding-right: 40px;
+    z-index: 10; }
+    .nav-list:not(.open) {
+      visibility: hidden; }
+    .nav-list.open {
+      visibility: visible; }
+      .nav-list.open .nav-item {
+        animation-duration: 0.5s;
+        animation-fill-mode: both;
+        animation-name: slideInLeft; }
+  .nav-item {
+    color: #2b2b2b;
+    list-style-type: none;
     padding: 15px 0;
-    text-align: right; }
+    text-align: right;
+    transform: translateX(-250px); }
+    .nav-item:first-child {
+      padding-top: 75px; }
+    .nav-item:not(.open) {
+      animation-duration: 0.5s;
+      animation-fill-mode: both;
+      animation-name: slideOutLeft; }
   .nav a {
     padding: 17px 20px; } }
 
