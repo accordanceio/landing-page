@@ -36,7 +36,7 @@
 }
 
 //Nav Variables
-$brgr-height: 60px;
+$brgr-height: 56px;
 $brgr-border-width: 2px;
 $brgr-margin: 30px;
 $brgr-bun-width: 25px;
@@ -52,7 +52,6 @@ $brgr-text-pad-top: ($brgr-margin / 2 + $brgr-height);
         &-list{
             @include flexbox(flex);
             @include flex-direction(column);
-            background: $white;
             position: absolute;
             right: 0;
             top: 60px;
@@ -117,9 +116,11 @@ $brgr-text-pad-top: ($brgr-margin / 2 + $brgr-height);
             cursor: pointer;
             display: inline-block;
             height: $brgr-height;
-            padding-left: 15px;
-            padding-top: 18px;
+            padding-left: 13px;
+            padding-top: 16px;
             position: relative;
+            right: 3px;
+            top: 4px;
             transition: $brgr-transition;
             user-select: none;
             width: $brgr-height;
@@ -128,6 +129,57 @@ $brgr-text-pad-top: ($brgr-margin / 2 + $brgr-height);
             &:hover {
                 border: lighten($black, 10%) solid $brgr-border-width;
             }
+        }
+
+        &-contain {
+      
+            &.open {
+                .nav-main {
+                    border: lighten($black, 10%) solid $brgr-border-width;
+                }
+            
+                .nav-bun--top {
+                    background: blighten($black, 10%)lack;
+                    top: 9px;
+                    transform: rotate(45deg);
+                }
+            
+                .nav-bun--mid {
+                    opacity: 0;
+                }
+            
+                .nav-bun--bot {
+                    background: lighten($black, 10%);
+                    top: 5px;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+
+        &-bun {
+            background: lighten($black, 10%);
+            position: relative;
+            transition: $brgr-transition;
+    
+            &--top,
+            &--mid,
+            &--bot {
+                height: $brgr-bun-height;
+                width: $brgr-bun-width;
+            }
+          
+            &--top {
+                top: 0;
+            }
+          
+            &--mid {
+                top: 8px;
+            }
+          
+            &--bot {
+                top: 16px;
+            }
+    
         }
     }
 }
