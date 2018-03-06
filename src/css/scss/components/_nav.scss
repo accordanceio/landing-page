@@ -26,11 +26,11 @@
         text-decoration: none;
         width: 100%;
 
-        // &:hover,
-        // &:focus {
-        //     color: $white;
-        //     background: $color-primary;
-        // }
+        &:hover,
+        &:focus {
+            color: $white;
+            background: $color-primary;
+        }
     }
 
 }

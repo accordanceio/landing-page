@@ -192,6 +192,14 @@ h3 {
 .referral-form {
   width: 680px; }
 
+@media only screen and (max-width: 800px) {
+  .referral-form {
+    width: 480px; } }
+
+@media only screen and (max-width: 600px) {
+  .referral-form {
+    width: 400px; } }
+
 .clearfix:after,
 .group:after {
   content: " ";
@@ -354,6 +362,9 @@ object {
     padding: 30px 20px 18px;
     text-decoration: none;
     width: 100%; }
+    .nav-link:hover, .nav-link:focus {
+      color: #fff;
+      background: #1E824C; }
 
 @media only screen and (max-width: 800px) {
   .nav-list {
@@ -559,7 +570,7 @@ object {
   flex-direction: column;
   background: #fff;
   margin-top: 62px;
-  min-height: 70vh;
+  min-height: 480px;
   padding: 20px;
   text-align: center;
   width: 100%;
@@ -569,6 +580,10 @@ object {
   -o-background-size: cover;
   background-size: cover; }
   .hero h2 {
+    -webkit-transition: font-size 500ms ease;
+    -moz-transition: font-size 500ms ease;
+    -ms-transition: font-size 500ms ease;
+    transition: font-size 500ms ease;
     font-size: 56px !important;
     font-size: 3.5rem !important;
     font-family: "Noto Serif", serif;
@@ -595,14 +610,18 @@ object {
       color: #1E824C; }
 
 @media only screen and (max-width: 800px) {
-  .hero h2 {
-    font-size: 44px !important;
-    font-size: 2.75rem !important; } }
+  .hero {
+    min-height: 400px; }
+    .hero h2 {
+      font-size: 44px !important;
+      font-size: 2.75rem !important; } }
 
 @media only screen and (max-width: 600px) {
-  .hero h2 {
-    font-size: 34px !important;
-    font-size: 2.125rem !important; } }
+  .hero {
+    min-height: 340px; }
+    .hero h2 {
+      font-size: 34px !important;
+      font-size: 2.125rem !important; } }
 
 .mission {
   -webkit-transition: all 0.5s ease;
@@ -612,6 +631,11 @@ object {
   background: #fff;
   padding: 20px;
   width: 100%; }
+  .mission h2 {
+    -webkit-transition: font-size 500ms ease;
+    -moz-transition: font-size 500ms ease;
+    -ms-transition: font-size 500ms ease;
+    transition: font-size 500ms ease; }
   .mission-info {
     background: #88e4b2;
     padding: 20px 0 0 20px;
@@ -659,19 +683,29 @@ object {
       height: 200px;
       width: 100%; }
     .mission-infographic-text {
+      -webkit-transition: font-size 500ms ease;
+      -moz-transition: font-size 500ms ease;
+      -ms-transition: font-size 500ms ease;
+      transition: font-size 500ms ease;
       border-radius: 0 0 20px 20px;
       color: #fff;
       padding: 15px;
       background: #a460e3; }
 
 @media only screen and (max-width: 800px) {
+  .mission-info-text {
+    font-size: 16px !important;
+    font-size: 1rem !important; }
   .mission-infographic {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
     -ms-flex-direction: column;
     -webkit-flex-direction: column;
-    flex-direction: column; } }
+    flex-direction: column; }
+  .mission h2 {
+    font-size: 26px !important;
+    font-size: 1.625rem !important; } }
 
 .process {
   background: #fff;
@@ -717,7 +751,7 @@ object {
   .process-segment {
     background: #3D1265;
     border-radius: 20px;
-    height: 170%;
+    height: 175%;
     left: 50%;
     margin-top: 90px;
     margin-left: -5px;

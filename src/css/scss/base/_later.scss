@@ -14,3 +14,15 @@ h3 {
 .referral-form {
     width: 680px;
 }
+
+@media only screen and (max-width: $break-lg) {
+    .referral-form {
+        width: 480px;
+    }
+}
+
+@media only screen and (max-width: $break-md) {
+    .referral-form {
+        width: 400px;
+    }
+}

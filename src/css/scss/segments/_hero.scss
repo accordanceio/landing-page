@@ -6,7 +6,7 @@
     flex-direction: column;
     background: $white;
     margin-top: 62px;
-    min-height: 70vh;
+    min-height: 480px;
     padding: 20px;
     text-align: center;
     width: 100%;
@@ -18,6 +18,7 @@
     background-size: cover;
 
     h2 {
+        @include transition(font-size 500ms ease);
         @include font-size(56);
         font-family: $font-secondary; 
         color: $white;
@@ -46,6 +47,8 @@
 
 @media only screen and (max-width: $break-lg) {
     .hero {
+        min-height: 400px;
+
         h2 {
             @include font-size(44);
         }
@@ -54,6 +57,8 @@
 
 @media only screen and (max-width: $break-md) {
     .hero {
+        min-height: 340px;
+
         h2 {
             @include font-size(34);
         }
