@@ -186,6 +186,12 @@ h2,
 h3 {
   text-align: center; }
 
+#pfy-powered a {
+  display: none !important; }
+
+.referral-form {
+  width: 600px; }
+
 .clearfix:after,
 .group:after {
   content: " ";
@@ -244,7 +250,8 @@ html {
   text-align: center;
   text-decoration: none;
   text-transform: capitalize;
-  cursor: pointer; }
+  cursor: pointer;
+  margin: 20px auto 0; }
   .btn:hover, .btn:focus {
     background: #1E824C;
     border-color: #1E824C;
@@ -567,7 +574,7 @@ object {
     font-family: "Noto Serif", serif;
     color: #fff;
     font-weight: 700 !important;
-    margin: 30px auto 60px;
+    margin: 30px auto 40px;
     text-shadow: -1px 2px 7px #111; }
   .hero .btn {
     font-size: 24px !important;
