@@ -190,7 +190,7 @@ h3 {
   display: none !important; }
 
 .referral-form {
-  width: 600px; }
+  width: 680px; }
 
 .clearfix:after,
 .group:after {
@@ -616,7 +616,7 @@ object {
     background: #88e4b2;
     padding: 20px 0 0 20px;
     max-width: 640px;
-    margin: 80px auto;
+    margin: 60px auto;
     border-radius: 20px;
     box-shadow: 20px 20px #a460e3; }
     .mission-info-inner {
@@ -749,6 +749,8 @@ object {
     .reminder .btn:hover {
       background: #fff;
       color: #1E824C; }
+  .reminder .referral-form {
+    margin: 0 auto; }
 
 .backup-top {
   -webkit-transition: all 0.5s ease;
@@ -823,7 +825,7 @@ body {
   transition: all 0.5s ease;
   margin: 0 auto; }
   .section h2 {
-    margin: 25px auto; }
+    margin: 25px auto 45px; }
   .section p {
     margin: 0 auto;
     max-width: 600px;
