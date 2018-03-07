@@ -1,4 +1,4 @@
-# Accordance
+# Accordance Landing Page [![CircleCI](https://circleci.com/gh/accordanceio/landing-page.svg?style=svg)](https://circleci.com/gh/accordanceio/landing-page)
 Invest Early, Invest Securely
 
 ## Getting Started
