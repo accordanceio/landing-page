@@ -17,12 +17,12 @@
     }
 
     &-link {
-        @include font-size(20);
+        @include font-size(18);
         @include transition(all .5s ease);
-        color: lighten($black, 15%);
-        font-family: $font-secondary;
+        color: $white;
+        font-family: $font-primary;
         font-weight: 300;
-        padding: 30px 20px 18px;
+        padding: 12px 20px;
         text-decoration: none;
         width: 100%;
 
@@ -31,6 +31,12 @@
             color: $white;
             background: $color-primary;
         }
+    }
+
+    &-cta {
+        background: $color-primary;
+        color: $white;
+        border-radius: 10px;
     }
 
 }

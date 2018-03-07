@@ -1,21 +1,3 @@
-@font-face {
-  font-family: 'Cambria-Bold';
-  src: url("/../../fonts/Cambria-Bold.eot?#iefix") format("embedded-opentype"), url("/../../fonts/Cambria-Bold.woff") format("woff"), url("/../../fonts/Cambria-Bold.ttf") format("truetype"), url("/../../fonts/Cambria-Bold.svg#Cambria-Bold") format("svg");
-  font-weight: bold;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Cambria';
-  src: url("/../../fonts/Cambria.eot?#iefix") format("embedded-opentype"), url("/../../fonts/Cambria.woff") format("woff"), url("/../../fonts/Cambria.ttf") format("truetype"), url("/../../fonts/Cambria.svg#Cambria") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'ProximaNova-Regular';
-  src: url("/../../ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("/../../ProximaNova-Regular.otf") format("opentype"), url("/../../ProximaNova-Regular.woff") format("woff"), url("ProximaNova-Regular.ttf") format("truetype"), url("/../../ProximaNova-Regular.svg#ProximaNova-Regular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
 .clearfix:after,
 .group:after {
   content: " ";
@@ -65,14 +47,14 @@
 
 --------------------------------------------------------------------- */
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 100%;
   font-style: normal;
   font-weight: 400;
   line-height: 1.6; }
 
 blockquote {
-  border-left: 2px solid #1E824C;
+  border-left: 2px solid #2ECC71;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 1.4em;
   font-style: italic;
@@ -85,7 +67,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Roboto", sans-serif; }
+  font-family: "Open Sans", sans-serif; }
 
 h1 {
   font-size: 48px;
@@ -94,28 +76,28 @@ h1 {
   margin: 0 0 25px; }
 
 h2 {
-  font-family: "Noto Serif", serif;
+  font-family: "Lato", serif;
   font-size: 34px;
   font-style: normal;
   font-weight: 400;
   margin: 0 0 25px; }
 
 h3 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 26px;
   font-style: normal;
   font-weight: 400;
   margin: 0 0 25px; }
 
 h4 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
   margin: 0 0 25px; }
 
 h5 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: normal;
@@ -124,7 +106,7 @@ h5 {
 p {
   font-size: 18px !important;
   font-size: 1.125rem !important;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   margin: 0 0 20px; }
 
@@ -152,7 +134,7 @@ code {
   word-wrap: break-word; }
 
 a {
-  color: #1E824C; }
+  color: #2ECC71; }
   a:hover, a:focus {
     text-decoration: none; }
 
@@ -248,8 +230,8 @@ html {
 .btn {
   border-radius: 5px;
   background: transparent;
-  border: 1px solid #1E824C;
-  color: #1E824C;
+  border: 1px solid #2ECC71;
+  color: #2ECC71;
   display: inline-block;
   font-size: 100%;
   height: 44px;
@@ -261,25 +243,25 @@ html {
   cursor: pointer;
   margin: 20px auto 0; }
   .btn:hover, .btn:focus {
-    background: #1E824C;
-    border-color: #1E824C;
+    background: #2ECC71;
+    border-color: #2ECC71;
     color: #fff;
     text-decoration: none; }
   .btn:active {
-    background: #145934;
-    border-color: #145934; }
+    background: #25a25a;
+    border-color: #25a25a; }
 
 .btn-primary {
-  background-color: #1E824C;
-  border-color: #1E824C;
+  background-color: #2ECC71;
+  border-color: #2ECC71;
   color: #fff; }
   .btn-primary:hover, .btn-primary:focus {
-    background: #196d40;
-    border-color: #196d40;
+    background: #29b765;
+    border-color: #29b765;
     color: #fff; }
   .btn-primary:active {
-    background: #145934;
-    border-color: #145934;
+    background: #25a25a;
+    border-color: #25a25a;
     color: #fff; }
 
 .btn-lg {
@@ -296,12 +278,12 @@ html {
   box-shadow: none;
   background: transparent;
   border: 0;
-  color: #1E824C;
+  color: #2ECC71;
   text-shadow: none;
   text-transform: none; }
   .btn-link:hover, .btn-link:focus {
     background: transparent;
-    color: #1E824C;
+    color: #2ECC71;
     text-decoration: underline; }
 
 @media screen and (max-width: 480px) {
@@ -350,21 +332,25 @@ object {
     -ms-transition: all 0.5s ease;
     transition: all 0.5s ease; }
   .nav-link {
-    font-size: 20px !important;
-    font-size: 1.25rem !important;
+    font-size: 18px !important;
+    font-size: 1.125rem !important;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    color: #373737;
-    font-family: "Noto Serif", serif;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
     font-weight: 300;
-    padding: 30px 20px 18px;
+    padding: 12px 20px;
     text-decoration: none;
     width: 100%; }
     .nav-link:hover, .nav-link:focus {
       color: #fff;
-      background: #1E824C; }
+      background: #2ECC71; }
+  .nav-cta {
+    background: #2ECC71;
+    color: #fff;
+    border-radius: 10px; }
 
 @media only screen and (max-width: 800px) {
   .nav-list {
@@ -410,7 +396,7 @@ object {
     transition: all 0.5s ease;
     width: auto; }
     .nav-link:hover, .nav-link--active {
-      border-right: #1E824C solid 10px;
+      border-right: #2ECC71 solid 10px;
       padding-right: 40px; }
   .nav-menu {
     background: rgba(30, 130, 76, 0.75);
@@ -471,12 +457,12 @@ object {
     visibility: hidden; } }
 
 .parallelogram {
-  background: #1E824C;
+  background: #2ECC71;
   -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); }
 
 .about {
-  background: #d6b7f2;
+  background: #cbd7e3;
   padding: 20px 20px 40px;
   width: 100%; }
 
@@ -490,13 +476,13 @@ object {
   -ms-flex-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  background: #1E824C;
+  background: #2ECC71;
   min-height: 130px;
   padding: 20px;
   width: 100%; }
   .footer h3 {
     color: #fff;
-    font-family: "Noto Serif", serif;
+    font-family: "Lato", serif;
     text-align: left; }
   .footer p {
     color: #fff; }
@@ -544,9 +530,8 @@ object {
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  background: #fff;
-  border-bottom: 1px solid #2b2b2b;
-  padding: 7px 0 7px 20px;
+  background: transparent;
+  padding: 7px 20px;
   position: fixed;
   max-height: 62px;
   top: 0;
@@ -568,17 +553,23 @@ object {
   -webkit-justify-content: center;
   justify-content: center;
   flex-direction: column;
-  background: #fff;
-  margin-top: 62px;
+  background: #2C3E50;
   min-height: 480px;
   padding: 20px;
   text-align: center;
   width: 100%;
-  background: url(../images/hero_background.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  background-image: linear-gradient(to bottom, rgba(44, 62, 80, 0.7), rgba(30, 61, 92, 0.7)), url("../images/hero_background.jpg");
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("the-image.png");
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("the-image.png");
+  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("the-image.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(44, 62, 80, 0.6)), to(rgba(44, 62, 80, 0.8))), url("../images/hero_background.jpg");
+  background-image: -webkit-linear-gradient(top, rgba(44, 62, 80, 0.6), rgba(44, 62, 80, 0.8)), url("../images/hero_background.jpg");
+  background-repeat: no-repeat;
+  background-position: center; }
   .hero h2 {
     -webkit-transition: font-size 500ms ease;
     -moz-transition: font-size 500ms ease;
@@ -586,7 +577,7 @@ object {
     transition: font-size 500ms ease;
     font-size: 56px !important;
     font-size: 3.5rem !important;
-    font-family: "Noto Serif", serif;
+    font-family: "Lato", serif;
     color: #fff;
     font-weight: 700 !important;
     margin: 30px auto 40px;
@@ -602,12 +593,12 @@ object {
     border: 1px solid #111;
     box-shadow: 0 0 3px #fff;
     color: #fff;
-    font-family: "Noto Serif", serif;
+    font-family: "Lato", serif;
     padding: 12px 30px 24px;
     height: 62px; }
     .hero .btn:hover {
       background: #fff;
-      color: #1E824C; }
+      color: #2ECC71; }
 
 @media only screen and (max-width: 800px) {
   .hero {
@@ -637,16 +628,10 @@ object {
     -ms-transition: font-size 500ms ease;
     transition: font-size 500ms ease; }
   .mission-info {
-    background: #88e4b2;
-    padding: 20px 0 0 20px;
-    max-width: 640px;
-    margin: 60px auto;
-    border-radius: 20px;
-    box-shadow: 20px 20px #a460e3; }
+    margin: 20px auto;
+    border-radius: 20px; }
     .mission-info-inner {
       background: #fff;
-      border-radius: 20px 0 20px 0;
-      border: 3px solid #2b2b2b;
       padding: 20px; }
     .mission-info-text {
       margin: 10px auto 20px !important; }
@@ -656,9 +641,9 @@ object {
     display: -ms-inline-flexbox;
     display: -webkit-inline-flex;
     display: inline-flex;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
     justify-content: center;
@@ -676,21 +661,23 @@ object {
       display: -ms-flexbox;
       display: -webkit-flex;
       display: flex;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
+      -ms-flex-align: flex;
+      -webkit-align-items: flex;
+      align-items: flex;
       border-radius: 20px 20px 0 0;
-      height: 200px;
-      width: 100%; }
+      height: 100px;
+      border-radius: 50%;
+      width: 100px;
+      background: grey;
+      margin: 0 auto 20px; }
     .mission-infographic-text {
       -webkit-transition: font-size 500ms ease;
       -moz-transition: font-size 500ms ease;
       -ms-transition: font-size 500ms ease;
       transition: font-size 500ms ease;
       border-radius: 0 0 20px 20px;
-      color: #fff;
-      padding: 15px;
-      background: #a460e3; }
+      color: #111;
+      padding: 15px; }
 
 @media only screen and (max-width: 800px) {
   .mission-info-text {
@@ -722,7 +709,7 @@ object {
     padding: 0 10px; }
     .process-outline-element {
       background: #fff;
-      border: 2px solid #3D1265;
+      border: 2px solid #2C3E50;
       border-radius: 20px;
       padding: 20px;
       margin: 40px auto 60px;
@@ -739,8 +726,8 @@ object {
       -ms-flex-align: center;
       -webkit-align-items: center;
       align-items: center;
-      background-color: #36d17d;
-      border: 2px solid #3D1265;
+      background-color: #7ee2a8;
+      border: 2px solid #2C3E50;
       border-radius: 50%;
       height: 100px;
       margin: -65px auto 15px;
@@ -749,9 +736,9 @@ object {
       margin: 0 auto;
       text-align: center; }
   .process-segment {
-    background: #3D1265;
+    background: #2C3E50;
     border-radius: 20px;
-    height: 175%;
+    height: 120%;
     left: 50%;
     margin-top: 90px;
     margin-left: -5px;
@@ -777,12 +764,12 @@ object {
     border: 1px solid #111;
     box-shadow: 0 0 3px #fff;
     color: #fff;
-    font-family: "Noto Serif", serif !important;
+    font-family: "Lato", serif !important;
     padding: 14px 30px 24px;
     height: 62px; }
     .reminder .btn:hover {
       background: #fff;
-      color: #1E824C; }
+      color: #2ECC71; }
   .reminder .referral-form {
     margin: 0 auto; }
 
@@ -803,10 +790,10 @@ object {
   width: 65px; }
   .backup-top:hover, .backup-top:focus {
     color: #f0e8be;
-    background: #1E824C; }
+    background: #2ECC71; }
 
 .valueprop {
-  background: #c7f2db;
+  background: white;
   padding: 20px;
   width: 100%; }
   .valueprop-offering {
@@ -833,7 +820,7 @@ object {
       -ms-flex-align: center;
       -webkit-align-items: center;
       align-items: center;
-      border: 2px solid #3D1265;
+      border: 2px solid #2C3E50;
       height: 120px;
       margin: 15px auto;
       width: 80%; }
@@ -847,7 +834,7 @@ object {
     width: 100%; } }
 
 h1 {
-  color: #1E824C; }
+  color: #2ECC71; }
 
 body {
   margin: 0; }
@@ -878,4 +865,4 @@ body {
     opacity: 1; } }
 
 .typing {
-  color: #1E824C; }
+  color: #2ECC71; }

@@ -2,9 +2,8 @@
     @include flexbox(flex);
     @include justify-content( space-between );
     @include transition(all .5s ease);
-    background: $white;
-    border-bottom: 1px solid lighten($black, 10%);
-    padding: 7px 0 7px 20px;
+    background: transparent;
+    padding: 7px 20px;
     position: fixed;
     max-height: 62px;
     top: 0;

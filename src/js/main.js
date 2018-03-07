@@ -45,7 +45,7 @@ sr.reveal('.process-segment', {
 
 //typing animation
 var options = {
-  strings: ["Early^1500", "Securely^8000"],
+  strings: ["Secure^1500", "Transparent^1500", "Accessible^1500"],
   typeSpeed: 80,
   startDelay: 1200,
   backSpeed: 40,
