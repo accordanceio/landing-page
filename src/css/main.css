@@ -209,7 +209,7 @@ h3 {
 
 .gradient {
   align-items: center;
-  background-image: linear-gradient(to right, #fc00ff, #00dbde);
+  background-image: linear-gradient(to right, #fc00ff, #FFFFFF);
   background-size: 600%;
   background-position: 0 0;
   /* Animation */
