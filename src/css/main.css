@@ -532,13 +532,16 @@ object {
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  background: transparent;
   padding: 7px 20px;
   position: fixed;
   max-height: 62px;
   top: 0;
   width: 100%;
   z-index: 99; }
+  .banner--top {
+    background: transparent; }
+  .banner--scroll {
+    background: #fff; }
 
 .hero {
   -webkit-transition: all 0.5s ease;

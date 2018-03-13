@@ -4,6 +4,20 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 	offset: 100
 });
 
+//Change Navbar Background on Scroll
+
+window.onscroll = function() {
+	var bnr = document.querySelector('#banner');
+
+	if (window.pageYOffset >= 50) {
+		bnr.classList.add('banner--scroll');
+		bnr.classList.remove('banner--top');
+	} else {
+		bnr.classList.add('banner--top');
+		bnr.classList.remove('banner--scroll');
+	}
+};
+
 //nav brgr
 (function() {
 	var body = document.body;
