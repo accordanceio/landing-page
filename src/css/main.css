@@ -326,8 +326,8 @@ object {
     display: -ms-inline-flexbox;
     display: -webkit-inline-flex;
     display: inline-flex;
-    margin: 0 auto;
-    padding: 0; }
+    margin: -60px auto 0;
+    padding: 60px 0 12px; }
   .nav-item {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -366,13 +366,14 @@ object {
     flex-direction: column;
     position: absolute;
     right: 0;
-    top: 60px;
+    top: 55px;
     z-index: 10; }
     .nav-list:not(.open) {
       visibility: hidden; }
     .nav-list.open {
-      background: rgba(255, 255, 255, 0.8);
-      min-width: 180px;
+      background: rgba(255, 255, 255, 0.75);
+      border-bottom-left-radius: 20px;
+      min-width: 160px;
       visibility: visible; }
       .nav-list.open .nav-item {
         animation-duration: 0.5s;
@@ -381,7 +382,7 @@ object {
   .nav-item {
     color: #2b2b2b;
     list-style-type: none;
-    padding: 15px 0;
+    padding: 12px 0;
     text-align: right;
     transform: translateX(-250px); }
     .nav-item:first-child {
@@ -395,13 +396,17 @@ object {
     color: #2b2b2b;
     font-size: 22px;
     font-weight: 400;
-    padding: 30px 20px 18px 50px;
+    padding: 18px 34px 18px 45px;
     text-decoration: none;
     transition: all 0.5s ease;
     width: auto; }
     .nav-link:hover, .nav-link--active {
       border-right: #2ecc71 solid 10px;
       padding-right: 40px; }
+  .nav-cta {
+    border-radius: 0;
+    border-bottom-left-radius: 20px;
+    padding: 18px 34px 26px 45px; }
   .nav-menu {
     background: #2ecc71;
     border: rgba(255, 255, 255, 0.5) solid 2px;
@@ -536,6 +541,7 @@ object {
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  border-bottom: 1px solid transparent;
   padding: 12px 20px;
   position: fixed;
   max-height: 70px;

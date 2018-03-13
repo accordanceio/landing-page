@@ -8,6 +8,7 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 
 window.onscroll = function() {
 	var bnr = document.querySelector('#banner');
+	var newLogo = (document.getElementById('logo-img').src = '../images/acc_temp_black.png');
 
 	if (window.pageYOffset >= 50) {
 		bnr.classList.add('banner--scroll');

@@ -8,8 +8,8 @@
 	&-list {
 		@include transition(all 0.5s ease);
 		@include flexbox(inline-flex);
-		margin: 0 auto;
-		padding: 0;
+		margin: -60px auto 0;
+		padding: 60px 0 12px;
 	}
 
 	&-item {
@@ -63,7 +63,7 @@ $brgr-transition: all $brgr-transition-speed ease;
 			@include flex-direction(column);
 			position: absolute;
 			right: 0;
-			top: 60px;
+			top: 55px;
 			z-index: 10;
 
 			&:not(.open) {
@@ -71,8 +71,9 @@ $brgr-transition: all $brgr-transition-speed ease;
 			}
 
 			&.open {
-				background: rgba(255, 255, 255, 0.8);
-				min-width: 180px;
+				background: rgba(255, 255, 255, 0.75);
+				border-bottom-left-radius: 20px;
+				min-width: 160px;
 				visibility: visible;
 
 				.nav-item {
@@ -86,7 +87,7 @@ $brgr-transition: all $brgr-transition-speed ease;
 		&-item {
 			color: lighten($black, 10%);
 			list-style-type: none;
-			padding: 15px 0;
+			padding: 12px 0;
 			text-align: right;
 			transform: translateX(-250px);
 
@@ -106,7 +107,7 @@ $brgr-transition: all $brgr-transition-speed ease;
 			color: lighten($black, 10%);
 			font-size: $brgr-font-size;
 			font-weight: 400;
-			padding: 30px 20px 18px 50px;
+			padding: 18px 34px 18px 45px;
 			text-decoration: none;
 			transition: $brgr-transition;
 			width: auto;
@@ -116,6 +117,12 @@ $brgr-transition: all $brgr-transition-speed ease;
 				border-right: $color-primary solid 10px;
 				padding-right: $brgr-text-pad;
 			}
+		}
+
+		&-cta {
+			border-radius: 0;
+			border-bottom-left-radius: 20px;
+			padding: 18px 34px 26px 45px;
 		}
 
 		&-menu {
