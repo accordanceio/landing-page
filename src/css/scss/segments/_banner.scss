@@ -3,7 +3,7 @@
 	@include justify-content(space-between);
 	@include transition(all 0.5s ease);
 	border-bottom: 1px solid transparent;
-	padding: 12px 20px;
+	padding: 12px 20px 0;
 	position: fixed;
 	max-height: 70px;
 	top: 0;
@@ -17,5 +17,14 @@
 	&--scroll {
 		background: $white;
 		border-bottom: 1px solid $color-secondary;
+
+		.nav-link {
+			color: $black;
+
+			&:hover,
+			&:focus {
+				color: darken($color-primary, 10%);
+			}
+		}
 	}
 }

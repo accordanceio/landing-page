@@ -172,6 +172,11 @@ h3 {
   display: none !important; }
 
 .referral-form {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background: transparent !important;
   width: 680px; }
 
 @media only screen and (max-width: 800px) {
@@ -542,7 +547,7 @@ object {
   -ms-transition: all 0.5s ease;
   transition: all 0.5s ease;
   border-bottom: 1px solid transparent;
-  padding: 12px 20px;
+  padding: 12px 20px 0;
   position: fixed;
   max-height: 70px;
   top: 0;
@@ -553,6 +558,10 @@ object {
   .banner--scroll {
     background: #fff;
     border-bottom: 1px solid #2c3e50; }
+    .banner--scroll .nav-link {
+      color: #111; }
+      .banner--scroll .nav-link:hover, .banner--scroll .nav-link:focus {
+        color: #25a25a; }
 
 .hero {
   -webkit-transition: all 0.5s ease;
