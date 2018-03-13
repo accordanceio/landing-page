@@ -1,56 +1,56 @@
 .process {
-    background: $white;
-    padding: 20px;
-    width: 100%;
+	background: $white;
+	padding: 20px;
+	width: 100%;
 
-    &-outline {
-        @include flexbox(flex); 
-        @include flex-direction(column);
-        margin: 35px auto 20px;
-        padding: 0 10px;
+	&-outline {
+		@include flexbox(flex);
+		@include flex-direction(column);
+		margin: 35px auto 20px;
+		padding: 0 10px;
 
-        &-element {
-            background: $white;
-            border: 2px solid $color-secondary;
-            border-radius: 20px;
-            padding: 20px;
-            margin: 40px auto 60px;
-            min-height: 160px;
-            max-width: 540px;
-            width: 100%;
-            z-index: 90;
+		&-element {
+			background: $white;
+			border: 2px solid $color-secondary;
+			border-radius: 20px;
+			padding: 20px;
+			margin: 40px auto 60px;
+			min-height: 160px;
+			max-width: 540px;
+			width: 100%;
+			z-index: 90;
 
-            &:last-child {
-                margin: 40px auto 40px;
-            }
-        }
+			&:last-child {
+				margin: 40px auto 40px;
+			}
+		}
 
-        &-icons {
-            @include flexbox(flex); 
-            @include align-items(center);
-            background-color: lighten($color-primary, 20%);
-            border: 2px solid $color-secondary;
-            border-radius: 50%;
-            height: 100px;
-            margin: -65px auto 15px;
-            width: 100px;
-        }
+		&-icons {
+			@include flexbox(flex);
+			@include align-items(center);
+			background-color: lighten($color-primary, 20%);
+			border: 2px solid $color-secondary;
+			border-radius: 50%;
+			height: 100px;
+			margin: -65px auto 15px;
+			width: 100px;
+		}
 
-        p {
-            margin: 0 auto;
-            text-align: center;
-        }
-    }
+		p {
+			margin: 0 auto;
+			text-align: center;
+		}
+	}
 
-    &-segment {
-        background: $color-secondary;
-        border-radius: 20px;
-        height: 120%;
-        left: 50%;
-        margin-top: 90px;
-        margin-left: -5px;
-        position: absolute;
-        width: 10px;
-        z-index: -1;
-    }
+	&-segment {
+		background: $color-secondary;
+		border-radius: 20px;
+		height: 120%;
+		left: 50%;
+		margin-top: 90px;
+		margin-left: -5px;
+		position: absolute;
+		width: 10px;
+		z-index: -1;
+	}
 }

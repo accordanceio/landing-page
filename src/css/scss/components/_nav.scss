@@ -1,44 +1,43 @@
 // @import "../base/_master.scss";
 
 .nav {
-    @include transition(all .5s ease);
-    @include flexbox(flex); 
-    @include align-items(center);
+	@include transition(all 0.5s ease);
+	@include flexbox(flex);
+	@include align-items(center);
 
-    &-list {
-        @include transition(all .5s ease);
-        @include flexbox(inline-flex); 
-        margin: 0 auto;
-        padding: 0;
-    }
+	&-list {
+		@include transition(all 0.5s ease);
+		@include flexbox(inline-flex);
+		margin: 0 auto;
+		padding: 0;
+	}
 
-    &-item {
-        @include transition(all .5s ease);
-    }
+	&-item {
+		@include transition(all 0.5s ease);
+	}
 
-    &-link {
-        @include font-size(18);
-        @include transition(all .5s ease);
-        color: $white;
-        font-family: $font-primary;
-        font-weight: 300;
-        padding: 12px 20px;
-        text-decoration: none;
-        width: 100%;
+	&-link {
+		@include font-size(18);
+		@include transition(all 0.5s ease);
+		color: $white;
+		font-family: $font-primary;
+		font-weight: 300;
+		padding: 12px 20px;
+		text-decoration: none;
+		width: 100%;
 
-        &:hover,
-        &:focus {
-            color: $white;
-            background: $color-primary;
-        }
-    }
+		&:hover,
+		&:focus {
+			color: $white;
+			background: $color-primary;
+		}
+	}
 
-    &-cta {
-        background: $color-primary;
-        color: $white;
-        border-radius: 10px;
-    }
-
+	&-cta {
+		background: $color-primary;
+		color: $white;
+		border-radius: 10px;
+	}
 }
 
 //Nav Variables
@@ -49,167 +48,163 @@ $brgr-bun-width: 25px;
 $brgr-bun-height: $brgr-border-width;
 $brgr-font-size: 22px;
 $brgr-text-pad: $brgr-margin;
-$brgr-transition-speed: .5s;
+$brgr-transition-speed: 0.5s;
 $brgr-transition: all $brgr-transition-speed ease;
 
 @media only screen and (max-width: $break-lg) {
-    .nav {
-        &-list{
-            @include flexbox(flex);
-            @include flex-direction(column);
-            position: absolute;
-            right: 0;
-            top: 60px;
-            z-index: 10;
+	.nav {
+		&-list {
+			@include flexbox(flex);
+			@include flex-direction(column);
+			position: absolute;
+			right: 0;
+			top: 60px;
+			z-index: 10;
 
-            &:not(.open) {
-                visibility: hidden;
-            }
-    
-            &.open {
-                background: rgba(255, 255, 255, .8);
-                min-width: 180px;
-                visibility: visible;
-    
-                .nav-item {
-                    animation-duration: $brgr-transition-speed;
-                    animation-fill-mode: both;
-                    animation-name: slideInLeft;
-                }
-            }
-        }
+			&:not(.open) {
+				visibility: hidden;
+			}
 
-        &-item {
-            color: lighten($black, 10%);
-            list-style-type: none;
-            padding: 15px 0;
-            text-align: right;
-            transform: translateX(-250px);
-    
-            &:first-child {
-                padding-top: 30px;
-            }
-    
-            &:not(.open){
-                animation-duration: $brgr-transition-speed;
-                animation-fill-mode: both;
-                animation-name: slideOutLeft;
-            }
-        }
+			&.open {
+				background: rgba(255, 255, 255, 0.8);
+				min-width: 180px;
+				visibility: visible;
 
-        &-link {
-            background: transparent;
-            color: lighten($black, 10%);
-            font-size: $brgr-font-size;
-            font-weight: 400;
-            padding: 30px 20px 18px 50px;
-            text-decoration: none;
-            transition: $brgr-transition;
-            width: auto;
-          
-            &:hover,
-            &--active {
-              border-right: $color-primary solid 10px;
-              padding-right: $brgr-text-pad;
-            }
-        }
+				.nav-item {
+					animation-duration: $brgr-transition-speed;
+					animation-fill-mode: both;
+					animation-name: slideInLeft;
+				}
+			}
+		}
 
-        &-menu {
-            background: rgba(30, 130, 76, .75);
-            border: rgba(0, 0, 0, .5) solid $brgr-border-width;
-            border-radius: 50%;
-            cursor: pointer;
-            display: inline-block;
-            height: $brgr-height;
-            padding-left: 13px;
-            padding-top: 16px;
-            position: relative;
-            right: 3px;
-            top: 4px;
-            transition: $brgr-transition;
-            user-select: none;
-            width: $brgr-height;
-            z-index: 20;
-        
-            &:hover {
-                border: lighten($black, 10%) solid $brgr-border-width;
-            }
-        }
+		&-item {
+			color: lighten($black, 10%);
+			list-style-type: none;
+			padding: 15px 0;
+			text-align: right;
+			transform: translateX(-250px);
 
-        &-contain {
-      
-            &.open {
-                .nav-main {
-                    border: lighten($black, 10%) solid $brgr-border-width;
-                }
-            
-                .nav-bun--top {
-                    background: blighten($black, 10%)lack;
-                    top: 9px;
-                    transform: rotate(45deg);
-                }
-            
-                .nav-bun--mid {
-                    opacity: 0;
-                }
-            
-                .nav-bun--bot {
-                    background: lighten($black, 10%);
-                    top: 5px;
-                    transform: rotate(-45deg);
-                }
-            }
-        }
+			&:first-child {
+				padding-top: 30px;
+			}
 
-        &-bun {
-            background: lighten($black, 10%);
-            position: relative;
-            transition: $brgr-transition;
-    
-            &--top,
-            &--mid,
-            &--bot {
-                height: $brgr-bun-height;
-                width: $brgr-bun-width;
-            }
-          
-            &--top {
-                top: 0;
-            }
-          
-            &--mid {
-                top: 8px;
-            }
-          
-            &--bot {
-                top: 16px;
-            }
-    
-        }
-    }
+			&:not(.open) {
+				animation-duration: $brgr-transition-speed;
+				animation-fill-mode: both;
+				animation-name: slideOutLeft;
+			}
+		}
+
+		&-link {
+			background: transparent;
+			color: lighten($black, 10%);
+			font-size: $brgr-font-size;
+			font-weight: 400;
+			padding: 30px 20px 18px 50px;
+			text-decoration: none;
+			transition: $brgr-transition;
+			width: auto;
+
+			&:hover,
+			&--active {
+				border-right: $color-primary solid 10px;
+				padding-right: $brgr-text-pad;
+			}
+		}
+
+		&-menu {
+			background: rgba(30, 130, 76, 0.75);
+			border: rgba(0, 0, 0, 0.5) solid $brgr-border-width;
+			border-radius: 50%;
+			cursor: pointer;
+			display: inline-block;
+			height: $brgr-height;
+			padding-left: 13px;
+			padding-top: 16px;
+			position: relative;
+			right: 3px;
+			top: 4px;
+			transition: $brgr-transition;
+			user-select: none;
+			width: $brgr-height;
+			z-index: 20;
+
+			&:hover {
+				border: lighten($black, 10%) solid $brgr-border-width;
+			}
+		}
+
+		&-contain {
+			&.open {
+				.nav-main {
+					border: lighten($black, 10%) solid $brgr-border-width;
+				}
+
+				.nav-bun--top {
+					background: blighten($black, 10%) lack;
+					top: 9px;
+					transform: rotate(45deg);
+				}
+
+				.nav-bun--mid {
+					opacity: 0;
+				}
+
+				.nav-bun--bot {
+					background: lighten($black, 10%);
+					top: 5px;
+					transform: rotate(-45deg);
+				}
+			}
+		}
+
+		&-bun {
+			background: lighten($black, 10%);
+			position: relative;
+			transition: $brgr-transition;
+
+			&--top,
+			&--mid,
+			&--bot {
+				height: $brgr-bun-height;
+				width: $brgr-bun-width;
+			}
+
+			&--top {
+				top: 0;
+			}
+
+			&--mid {
+				top: 8px;
+			}
+
+			&--bot {
+				top: 16px;
+			}
+		}
+	}
 }
 
 //Nav Keyframes
 @keyframes slideInLeft {
-    0% {
-        transform: translate3d(250px, 0, 0);
-        visibility: visible;
-    }
+	0% {
+		transform: translate3d(250px, 0, 0);
+		visibility: visible;
+	}
 
-    100% {
-        transform: translate3d(0, 0, 0);
-    }
+	100% {
+		transform: translate3d(0, 0, 0);
+	}
 }
 
 @keyframes slideOutLeft {
-    0% {
-        transform: translate3d(0, 0, 0);
-    }
+	0% {
+		transform: translate3d(0, 0, 0);
+	}
 
-    100% {
-        transform: translate3d(250px, 0, 0);
-        visibility: hidden;
-    }
+	100% {
+		transform: translate3d(250px, 0, 0);
+		visibility: hidden;
+	}
 }
-
-

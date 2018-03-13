@@ -1,20 +1,32 @@
 @keyframes gradients {
-    0%   {background-position: 0 0;}
-    25% {background-position: 50% 0;}
-    50% {background-position: 90% 0;}
-    60% {background-position: 60%;}
-    75% {background-position: 40%;}
-    100%  {background-position: 0 0;}
+	0% {
+		background-position: 0 0;
+	}
+	25% {
+		background-position: 50% 0;
+	}
+	50% {
+		background-position: 90% 0;
+	}
+	60% {
+		background-position: 60%;
+	}
+	75% {
+		background-position: 40%;
+	}
+	100% {
+		background-position: 0 0;
+	}
 }
 
 .gradient {
-  align-items: center;
-  background-image: linear-gradient(to right, #fc00ff, #00dbde);
-  background-size: 600%;
-  background-position: 0 0;
+	align-items: center;
+	background-image: linear-gradient(to right, #fc00ff, #00dbde);
+	background-size: 600%;
+	background-position: 0 0;
 
-  /* Animation */
-  animation-duration: 12s;
-  animation-iteration-count: infinite;
-  animation-name: gradients;
+	/* Animation */
+	animation-duration: 12s;
+	animation-iteration-count: infinite;
+	animation-name: gradients;
 }

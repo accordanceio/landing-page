@@ -1,75 +1,87 @@
 .hero {
-    @include transition(all .5s ease);
-    @include flexbox(flex);
-    @include align-items(center);
-    @include justify-content(center);
-    flex-direction: column;
-    background: $color-secondary;
-    min-height: 480px;
-    padding: 20px;
-    text-align: center;
-    width: 100%;
+	@include transition(all 0.5s ease);
+	@include flexbox(flex);
+	@include align-items(center);
+	@include justify-content(center);
+	flex-direction: column;
+	background: $color-secondary;
+	min-height: 480px;
+	padding: 20px;
+	text-align: center;
+	width: 100%;
 
-    // background: url(../images/hero_background.jpg) no-repeat center center; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    // background-color: #2C3E50;
+	// background: url(../images/hero_background.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	// background-color: #2C3E50;
 
-    background-image: linear-gradient(to bottom, rgba(44, 62, 80, 0.7), rgba(30, 61, 92, 0.7)), url("../images/hero_background.jpg");
-    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("the-image.png");
-    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("the-image.png");
-    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("the-image.png");
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(44, 62, 80, 0.6)), to(rgba(44, 62, 80, 0.8))), url("../images/hero_background.jpg");
-    background-image: -webkit-linear-gradient(top, rgba(44, 62, 80, 0.6), rgba(44, 62, 80, 0.8)), url("../images/hero_background.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
+	background-image: linear-gradient(to bottom, rgba(44, 62, 80, 0.7), rgba(30, 61, 92, 0.7)),
+		url('../images/hero_background.jpg');
+	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+		url('the-image.png');
+	background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+		url('the-image.png');
+	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+		url('the-image.png');
+	background-image: -webkit-gradient(
+			linear,
+			left top,
+			left bottom,
+			from(rgba(44, 62, 80, 0.6)),
+			to(rgba(44, 62, 80, 0.8))
+		),
+		url('../images/hero_background.jpg');
+	background-image: -webkit-linear-gradient(top, rgba(44, 62, 80, 0.6), rgba(44, 62, 80, 0.8)),
+		url('../images/hero_background.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
 
-    h2 {
-        @include transition(font-size 500ms ease);
-        @include font-size(56);
-        font-family: $font-secondary; 
-        color: $white;
-        font-weight: 700 !important;
-        margin: 30px auto 40px;
-        text-shadow: -1px 2px 7px $black;
-    }
+	h2 {
+		@include transition(font-size 500ms ease);
+		@include font-size(56);
+		font-family: $font-secondary;
+		color: $white;
+		font-weight: 700 !important;
+		margin: 30px auto 40px;
+		text-shadow: -1px 2px 7px $black;
+	}
 
-    .btn {
-        @include font-size(24);
-        @include transition(all .5s ease);
-        background: rgba(30, 130, 76, .95);
-        border: 1px solid $black;
-        box-shadow: 0 0 3px $white;
-        color: $white;
-        font-family: $font-secondary;
-        padding: 12px 30px 24px;
-        height: 62px;
+	.btn {
+		@include font-size(24);
+		@include transition(all 0.5s ease);
+		background: rgba(30, 130, 76, 0.95);
+		border: 1px solid $black;
+		box-shadow: 0 0 3px $white;
+		color: $white;
+		font-family: $font-secondary;
+		padding: 12px 30px 24px;
+		height: 62px;
 
-        &:hover {
-            background: $white;
-            color: $color-primary;
-        }
-    }
+		&:hover {
+			background: $white;
+			color: $color-primary;
+		}
+	}
 }
 
 @media only screen and (max-width: $break-lg) {
-    .hero {
-        min-height: 400px;
+	.hero {
+		min-height: 400px;
 
-        h2 {
-            @include font-size(44);
-        }
-    }
+		h2 {
+			@include font-size(44);
+		}
+	}
 }
 
 @media only screen and (max-width: $break-md) {
-    .hero {
-        min-height: 340px;
+	.hero {
+		min-height: 340px;
 
-        h2 {
-            @include font-size(34);
-        }
-    }
+		h2 {
+			@include font-size(34);
+		}
+	}
 }

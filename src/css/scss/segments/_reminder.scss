@@ -1,50 +1,50 @@
 .reminder {
-    background: $white;
-    padding: 20px;
-    text-align: center;
-    width: 100%;
+	background: $white;
+	padding: 20px;
+	text-align: center;
+	width: 100%;
 
-    &-backup {
-        height: 60px;
-    }
+	&-backup {
+		height: 60px;
+	}
 
-    .btn {
-        @include font-size(24);
-        @include transition(all .5s ease);
-        background: rgba(30, 130, 76, .8);
-        border: 1px solid $black;
-        box-shadow: 0 0 3px $white;
-        color: $white;
-        font-family: $font-secondary !important;
-        padding: 14px 30px 24px;
-        height: 62px;
+	.btn {
+		@include font-size(24);
+		@include transition(all 0.5s ease);
+		background: rgba(30, 130, 76, 0.8);
+		border: 1px solid $black;
+		box-shadow: 0 0 3px $white;
+		color: $white;
+		font-family: $font-secondary !important;
+		padding: 14px 30px 24px;
+		height: 62px;
 
-        &:hover {
-            background: $white;
-            color: $color-primary;
-        }
-    }
+		&:hover {
+			background: $white;
+			color: $color-primary;
+		}
+	}
 
-    .referral-form {
-        margin: 0 auto;
-    }
+	.referral-form {
+		margin: 0 auto;
+	}
 }
 
 .backup-top {
-    @include transition(all .5s ease);
-    @include font-size(24);
-    display: block;
-    float: right;
-    background: lighten($color-tertiary, 40%);
-    padding: 10px 20px 0;
-    border-radius: 50%;
-    text-decoration: none;
-    height: 60px;
-    width: 65px;
+	@include transition(all 0.5s ease);
+	@include font-size(24);
+	display: block;
+	float: right;
+	background: lighten($color-tertiary, 40%);
+	padding: 10px 20px 0;
+	border-radius: 50%;
+	text-decoration: none;
+	height: 60px;
+	width: 65px;
 
-    &:hover,
-    &:focus {
-       color: lighten($color-tertiary, 40%); 
-       background: $color-primary;
-    }
+	&:hover,
+	&:focus {
+		color: lighten($color-tertiary, 40%);
+		background: $color-primary;
+	}
 }

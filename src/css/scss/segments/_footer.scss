@@ -1,66 +1,65 @@
 .footer {
-    @include flexbox(flex); 
-    @include align-items(center);
-    @include justify-content(space-between);
-    background: $color-primary;
-    min-height: 130px;
-    padding: 20px;
-    width: 100%;
+	@include flexbox(flex);
+	@include align-items(center);
+	@include justify-content(space-between);
+	background: $color-primary;
+	min-height: 130px;
+	padding: 20px;
+	width: 100%;
 
+	h3 {
+		color: $white;
+		font-family: $font-secondary;
+		text-align: left;
+	}
 
-    h3 {
-        color: $white;
-        font-family: $font-secondary;
-        text-align: left;
-    }
+	p {
+		color: $white;
+	}
 
-    p {
-        color: $white;
-    }
+	a {
+		color: $white;
+		text-decoration: none;
 
-    a {
-        color: $white;
-        text-decoration: none;
+		&:hover {
+			color: $color-tertiary;
+		}
+	}
 
-        &:hover {
-            color: $color-tertiary;
-        }
-    }
+	&-info {
+		padding: 20px;
+		width: 50%;
 
-    &-info {
-        padding: 20px;
-        width: 50%;
+		p {
+			max-width: 400px;
+		}
+	}
 
-        p {
-            max-width: 400px;
-        }
-    }
+	&-nav {
+		padding: 20px;
+		width: 20%;
+	}
 
-    &-nav {
-        padding: 20px;
-        width: 20%;
-    }
+	&-social {
+		padding: 20px;
+		width: 20%;
 
-    &-social {
-        padding: 20px;
-        width: 20%;
+		p {
+			text-align: center;
+		}
 
-        p {
-            text-align: center;
-        }
+		&-container {
+			@include flexbox(flex);
+			@include justify-content(space-between);
+		}
 
-        &-container {
-            @include flexbox(flex); 
-            @include justify-content(space-between);
-        }
-
-        &-logo {
-            background: $white;
-            border-radius: 50%;
-            margin: 10px;
-            padding: 10px;
-            height: 40px;
-            width: 40px;
-        }
-    }
+		&-logo {
+			background: $white;
+			border-radius: 50%;
+			margin: 10px;
+			padding: 10px;
+			height: 40px;
+			width: 40px;
+		}
+	}
 }

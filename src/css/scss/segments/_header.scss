@@ -1,12 +1,12 @@
 .banner {
-    @include flexbox(flex);
-    @include justify-content( space-between );
-    @include transition(all .5s ease);
-    background: transparent;
-    padding: 7px 20px;
-    position: fixed;
-    max-height: 62px;
-    top: 0;
-    width: 100%;
-    z-index: 99;
+	@include flexbox(flex);
+	@include justify-content(space-between);
+	@include transition(all 0.5s ease);
+	background: transparent;
+	padding: 7px 20px;
+	position: fixed;
+	max-height: 62px;
+	top: 0;
+	width: 100%;
+	z-index: 99;
 }

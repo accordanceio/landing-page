@@ -1,44 +1,44 @@
 .valueprop {
-    background: lighten($color-primary, 55%);
-    padding: 20px;
-    width: 100%;
+	background: lighten($color-primary, 55%);
+	padding: 20px;
+	width: 100%;
 
-    &-offering {
-        @include flexbox(inline-flex); 
-        @include flex-wrap(wrap);
-        margin: 35px auto 20px;
-        padding: 0 10px;
+	&-offering {
+		@include flexbox(inline-flex);
+		@include flex-wrap(wrap);
+		margin: 35px auto 20px;
+		padding: 0 10px;
 
-        &-element {
-            @include transition(all .5s ease);    
-            margin: 0 auto;
-            padding: 20px;
-            width: 33.33%;
-        }
+		&-element {
+			@include transition(all 0.5s ease);
+			margin: 0 auto;
+			padding: 20px;
+			width: 33.33%;
+		}
 
-        &-logo {
-            @include flexbox(flex); 
-            @include align-items(center);
-            border: 2px solid $color-secondary;
-            height: 120px;
-            margin: 15px auto;
-            width: 80%;
-        }
-    }
+		&-logo {
+			@include flexbox(flex);
+			@include align-items(center);
+			border: 2px solid $color-secondary;
+			height: 120px;
+			margin: 15px auto;
+			width: 80%;
+		}
+	}
 }
 
 @media only screen and (max-width: $break-lg) {
-    .valueprop {
-        &-offering-element {
-            width: 50%;
-        }
-    }
+	.valueprop {
+		&-offering-element {
+			width: 50%;
+		}
+	}
 }
 
 @media only screen and (max-width: $break-md) {
-    .valueprop {
-        &-offering-element {
-            width: 100%;
-        }
-    }
+	.valueprop {
+		&-offering-element {
+			width: 100%;
+		}
+	}
 }

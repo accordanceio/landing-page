@@ -1,6 +1,6 @@
 .clearfix:after,
 .group:after {
-  content: " ";
+  content: ' ';
   display: block;
   clear: both; }
 
@@ -37,7 +37,7 @@
 
 .clearfix:after,
 .group:after {
-  content: " ";
+  content: ' ';
   display: block;
   clear: both; }
 
@@ -54,8 +54,8 @@ body {
   line-height: 1.6; }
 
 blockquote {
-  border-left: 2px solid #2ECC71;
-  font-family: Georgia, Times, "Times New Roman", serif;
+  border-left: 2px solid #2ecc71;
+  font-family: Georgia, Times, 'Times New Roman', serif;
   font-size: 1.4em;
   font-style: italic;
   font-weight: 400;
@@ -114,7 +114,7 @@ pre {
   background: #222;
   color: #fff;
   display: block;
-  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-family: Monaco, Menlo, Consolas, 'Courier New', monospace;
   font-size: 13px;
   line-height: 20px;
   margin: 0 0 20px;
@@ -126,7 +126,7 @@ code {
   border-radius: 5px;
   background: #f5f5f5;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-family: Monaco, Menlo, Consolas, 'Courier New', monospace;
   font-size: 13px;
   line-height: 20px;
   padding: 2px 10px;
@@ -134,7 +134,7 @@ code {
   word-wrap: break-word; }
 
 a {
-  color: #2ECC71; }
+  color: #2ecc71; }
   a:hover, a:focus {
     text-decoration: none; }
 
@@ -184,7 +184,7 @@ h3 {
 
 .clearfix:after,
 .group:after {
-  content: " ";
+  content: ' ';
   display: block;
   clear: both; }
 
@@ -209,7 +209,7 @@ h3 {
 
 .gradient {
   align-items: center;
-  background-image: linear-gradient(to right, #fc00ff, #FFFFFF);
+  background-image: linear-gradient(to right, #fc00ff, #00dbde);
   background-size: 600%;
   background-position: 0 0;
   /* Animation */
@@ -222,7 +222,9 @@ html {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit; }
@@ -230,8 +232,8 @@ html {
 .btn {
   border-radius: 5px;
   background: transparent;
-  border: 1px solid #2ECC71;
-  color: #2ECC71;
+  border: 1px solid #2ecc71;
+  color: #2ecc71;
   display: inline-block;
   font-size: 100%;
   height: 44px;
@@ -243,8 +245,8 @@ html {
   cursor: pointer;
   margin: 20px auto 0; }
   .btn:hover, .btn:focus {
-    background: #2ECC71;
-    border-color: #2ECC71;
+    background: #2ecc71;
+    border-color: #2ecc71;
     color: #fff;
     text-decoration: none; }
   .btn:active {
@@ -252,8 +254,8 @@ html {
     border-color: #25a25a; }
 
 .btn-primary {
-  background-color: #2ECC71;
-  border-color: #2ECC71;
+  background-color: #2ecc71;
+  border-color: #2ecc71;
   color: #fff; }
   .btn-primary:hover, .btn-primary:focus {
     background: #29b765;
@@ -270,7 +272,7 @@ html {
   padding: 0 60px; }
 
 .btn-sm {
-  font-size: .85em;
+  font-size: 0.85em;
   height: 30.8px;
   padding: 0 10px; }
 
@@ -278,12 +280,12 @@ html {
   box-shadow: none;
   background: transparent;
   border: 0;
-  color: #2ECC71;
+  color: #2ecc71;
   text-shadow: none;
   text-transform: none; }
   .btn-link:hover, .btn-link:focus {
     background: transparent;
-    color: #2ECC71;
+    color: #2ecc71;
     text-decoration: underline; }
 
 @media screen and (max-width: 480px) {
@@ -346,9 +348,9 @@ object {
     width: 100%; }
     .nav-link:hover, .nav-link:focus {
       color: #fff;
-      background: #2ECC71; }
+      background: #2ecc71; }
   .nav-cta {
-    background: #2ECC71;
+    background: #2ecc71;
     color: #fff;
     border-radius: 10px; }
 
@@ -396,7 +398,7 @@ object {
     transition: all 0.5s ease;
     width: auto; }
     .nav-link:hover, .nav-link--active {
-      border-right: #2ECC71 solid 10px;
+      border-right: #2ecc71 solid 10px;
       padding-right: 40px; }
   .nav-menu {
     background: rgba(30, 130, 76, 0.75);
@@ -457,7 +459,7 @@ object {
     visibility: hidden; } }
 
 .parallelogram {
-  background: #2ECC71;
+  background: #2ecc71;
   -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); }
 
@@ -476,7 +478,7 @@ object {
   -ms-flex-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  background: #2ECC71;
+  background: #2ecc71;
   min-height: 130px;
   padding: 20px;
   width: 100%; }
@@ -490,7 +492,7 @@ object {
     color: #fff;
     text-decoration: none; }
     .footer a:hover {
-      color: #B8A02A; }
+      color: #b8a02a; }
   .footer-info {
     padding: 20px;
     width: 50%; }
@@ -553,7 +555,7 @@ object {
   -webkit-justify-content: center;
   justify-content: center;
   flex-direction: column;
-  background: #2C3E50;
+  background: #2c3e50;
   min-height: 480px;
   padding: 20px;
   text-align: center;
@@ -598,7 +600,7 @@ object {
     height: 62px; }
     .hero .btn:hover {
       background: #fff;
-      color: #2ECC71; }
+      color: #2ecc71; }
 
 @media only screen and (max-width: 800px) {
   .hero {
@@ -709,7 +711,7 @@ object {
     padding: 0 10px; }
     .process-outline-element {
       background: #fff;
-      border: 2px solid #2C3E50;
+      border: 2px solid #2c3e50;
       border-radius: 20px;
       padding: 20px;
       margin: 40px auto 60px;
@@ -727,7 +729,7 @@ object {
       -webkit-align-items: center;
       align-items: center;
       background-color: #7ee2a8;
-      border: 2px solid #2C3E50;
+      border: 2px solid #2c3e50;
       border-radius: 50%;
       height: 100px;
       margin: -65px auto 15px;
@@ -736,7 +738,7 @@ object {
       margin: 0 auto;
       text-align: center; }
   .process-segment {
-    background: #2C3E50;
+    background: #2c3e50;
     border-radius: 20px;
     height: 120%;
     left: 50%;
@@ -769,7 +771,7 @@ object {
     height: 62px; }
     .reminder .btn:hover {
       background: #fff;
-      color: #2ECC71; }
+      color: #2ecc71; }
   .reminder .referral-form {
     margin: 0 auto; }
 
@@ -790,7 +792,7 @@ object {
   width: 65px; }
   .backup-top:hover, .backup-top:focus {
     color: #f0e8be;
-    background: #2ECC71; }
+    background: #2ecc71; }
 
 .valueprop {
   background: white;
@@ -820,7 +822,7 @@ object {
       -ms-flex-align: center;
       -webkit-align-items: center;
       align-items: center;
-      border: 2px solid #2C3E50;
+      border: 2px solid #2c3e50;
       height: 120px;
       margin: 15px auto;
       width: 80%; }
@@ -834,7 +836,7 @@ object {
     width: 100%; } }
 
 h1 {
-  color: #2ECC71; }
+  color: #2ecc71; }
 
 body {
   margin: 0; }
@@ -865,4 +867,4 @@ body {
     opacity: 1; } }
 
 .typing {
-  color: #2ECC71; }
+  color: #2ecc71; }

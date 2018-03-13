@@ -1,18 +1,18 @@
 body {
-    margin: 0;
+	margin: 0;
 }
 
 .section {
-    @include transition(all .5s ease);  
-    margin: 0 auto;
+	@include transition(all 0.5s ease);
+	margin: 0 auto;
 
-    h2 {
-        margin: 25px auto 45px;
-    }
+	h2 {
+		margin: 25px auto 45px;
+	}
 
-    p {
-        margin: 0 auto;
-        max-width: 600px;
-        text-align: center;
-    }
+	p {
+		margin: 0 auto;
+		max-width: 600px;
+		text-align: center;
+	}
 }

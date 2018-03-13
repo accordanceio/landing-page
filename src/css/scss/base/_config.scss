@@ -6,48 +6,42 @@ $padding: 40px; // Padding and margins
 $line-height: 44px; // Consistent height for buttons, inputs etc.
 
 // Fonts
-$font-primary: "Open Sans", sans-serif;
-$font-secondary: "Lato", serif;
-
+$font-primary: 'Open Sans', sans-serif;
+$font-secondary: 'Lato', serif;
 
 // Responsive breakpoints
 $break-sm: 480px;
 $break-md: 600px;
 $break-lg: 800px;
 
-
 // Cool
 $darkpurple: #130f40;
-$bluepurple:  #686de0;
-$blue:  #4834d4;
+$bluepurple: #686de0;
+$blue: #4834d4;
 $bluegreen: #22a6b3;
-$teal:  #7ed6df;
+$teal: #7ed6df;
 $green: #6ab04c;
-$lime:  #badc58;
-
+$lime: #badc58;
 
 // Warm
-$redpink:  #eb4d4b;
-$pink:  #ff7979;
-$orange:     #f0932b;
+$redpink: #eb4d4b;
+$pink: #ff7979;
+$orange: #f0932b;
 $tang: #f9ca24;
 $pinkpurple: #e056fd;
-$purple:  #be2edd;
-
+$purple: #be2edd;
 
 // Gray Scale
-$white:  #fff;
+$white: #fff;
 $silver: #ddd;
-$grey:   #aaa;
+$grey: #aaa;
 $darkgrey: #444;
-$black:  #111;
-
+$black: #111;
 
 // Project color variables
-$color-primary: #2ECC71;
-$color-secondary: #2C3E50;
-$color-tertiary: #B8A02A;
-
+$color-primary: #2ecc71;
+$color-secondary: #2c3e50;
+$color-tertiary: #b8a02a;
 
 $danger-color: $redpink; // Bad color for errors, validation etc.
 $success-color: $green; // Good color for success etc.
