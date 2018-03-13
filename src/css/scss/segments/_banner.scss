@@ -2,9 +2,9 @@
 	@include flexbox(flex);
 	@include justify-content(space-between);
 	@include transition(all 0.5s ease);
-	padding: 7px 20px;
+	padding: 12px 20px;
 	position: fixed;
-	max-height: 62px;
+	max-height: 70px;
 	top: 0;
 	width: 100%;
 	z-index: 99;
@@ -15,5 +15,6 @@
 
 	&--scroll {
 		background: $white;
+		border-bottom: 1px solid $color-secondary;
 	}
 }

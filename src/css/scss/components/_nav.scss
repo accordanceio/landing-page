@@ -28,8 +28,7 @@
 
 		&:hover,
 		&:focus {
-			color: $white;
-			background: $color-primary;
+			color: lighten($color-primary, 5%);
 		}
 	}
 
@@ -37,6 +36,12 @@
 		background: $color-primary;
 		color: $white;
 		border-radius: 10px;
+
+		&:hover,
+		&:focus {
+			color: $white !important;
+			background: darken($color-primary, 10%);
+		}
 	}
 }
 
@@ -114,8 +119,8 @@ $brgr-transition: all $brgr-transition-speed ease;
 		}
 
 		&-menu {
-			background: rgba(30, 130, 76, 0.75);
-			border: rgba(0, 0, 0, 0.5) solid $brgr-border-width;
+			background: $color-primary;
+			border: rgba(255, 255, 255, 0.5) solid $brgr-border-width;
 			border-radius: 50%;
 			cursor: pointer;
 			display: inline-block;
@@ -130,19 +135,25 @@ $brgr-transition: all $brgr-transition-speed ease;
 			width: $brgr-height;
 			z-index: 20;
 
-			&:hover {
+			&:hover,
+			&:active,
+			&:focus {
 				border: lighten($black, 10%) solid $brgr-border-width;
+
+				.nav-bun {
+					background: lighten($black, 10%);
+				}
 			}
 		}
 
 		&-contain {
 			&.open {
-				.nav-main {
-					border: lighten($black, 10%) solid $brgr-border-width;
+				.nav-menu {
+					border: lighten($black, 10%) solid $brgr-border-width !important;
 				}
 
 				.nav-bun--top {
-					background: blighten($black, 10%) lack;
+					background: lighten($black, 10%);
 					top: 9px;
 					transform: rotate(45deg);
 				}
@@ -160,7 +171,7 @@ $brgr-transition: all $brgr-transition-speed ease;
 		}
 
 		&-bun {
-			background: lighten($black, 10%);
+			background: rgba(255, 255, 255, 0.9);
 			position: relative;
 			transition: $brgr-transition;
 
