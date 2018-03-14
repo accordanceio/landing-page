@@ -178,6 +178,8 @@ h3 {
   transition: all 0.5s ease;
   background: transparent !important;
   width: 680px; }
+  .referral-form .alert-danger {
+    background-color: red !important; }
 
 @media only screen and (max-width: 800px) {
   .referral-form {
@@ -886,10 +888,10 @@ h1 {
   color: #2ecc71; }
 
 body {
-  margin: 0; }
+  margin: 0 auto;
+  max-width: 1920px; }
 
 .main {
-  max-width: 1920px;
   margin: 0 auto; }
 
 .section {
