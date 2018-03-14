@@ -656,15 +656,6 @@ object {
     -moz-transition: font-size 500ms ease;
     -ms-transition: font-size 500ms ease;
     transition: font-size 500ms ease; }
-  .mission-info {
-    margin: 20px auto;
-    border-radius: 20px; }
-    .mission-info-inner {
-      padding: 20px; }
-    .mission-info-text {
-      margin: 10px auto 20px !important; }
-      .mission-info-text:last-child {
-        margin-bottom: 0 !important; }
   .mission-infographic {
     display: -ms-inline-flexbox;
     display: -webkit-inline-flex;
@@ -888,8 +879,7 @@ h1 {
   color: #2ecc71; }
 
 body {
-  margin: 0 auto;
-  max-width: 1920px; }
+  margin: 0 auto; }
 
 .main {
   margin: 0 auto; }
@@ -901,7 +891,7 @@ body {
   transition: all 0.5s ease;
   margin: 0 auto; }
   .section h2 {
-    margin: 25px auto 45px; }
+    margin: 35px auto 40px; }
   .section p {
     margin: 0 auto;
     max-width: 600px;

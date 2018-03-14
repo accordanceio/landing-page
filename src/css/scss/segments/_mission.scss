@@ -9,23 +9,6 @@
 		@include transition(font-size 500ms ease);
 	}
 
-	&-info {
-		margin: 20px auto;
-		border-radius: 20px;
-
-		&-inner {
-			padding: 20px;
-		}
-
-		&-text {
-			margin: 10px auto 20px !important;
-
-			&:last-child {
-				margin-bottom: 0 !important;
-			}
-		}
-	}
-
 	&-infographic {
 		@include flexbox(inline-flex);
 		@include align-items(flex-start);
