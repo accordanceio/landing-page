@@ -28,12 +28,39 @@
 		&-icons {
 			@include flexbox(flex);
 			@include align-items(center);
-			background-color: lighten($color-primary, 20%);
+			// background-color: lighten($color-primary, 25%);
+			background-color: $white;
 			border: 2px solid $color-secondary;
 			border-radius: 50%;
-			height: 100px;
-			margin: -65px auto 15px;
-			width: 100px;
+			height: 120px;
+			margin: -85px auto 15px;
+			width: 120px;
+
+			&-select {
+				background: url(../../images/select_sm.png) center center no-repeat;
+			}
+
+			&-preq {
+				background: url(../../images/preq_sm.png) center center no-repeat;
+			}
+
+			&-funds {
+				background: url(../../images/funds_sm.png) center center no-repeat;
+			}
+
+			&-tokens {
+				background: url(../../images/tokens_sm.png) center center no-repeat;
+			}
+
+			&-select,
+			&-preq,
+			&-funds,
+			&-tokens {
+				background-size: cover;
+				margin: 0 auto;
+				width: 95px;
+				height: 95px;
+			}
 		}
 
 		p {
