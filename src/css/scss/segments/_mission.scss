@@ -1,6 +1,7 @@
 .mission {
 	@include transition(all 0.5s ease);
-	background: $white;
+	background: url(../../images/mission_bg.png) center center no-repeat;
+	background-size: cover;
 	padding: 20px;
 	width: 100%;
 
@@ -9,17 +10,10 @@
 	}
 
 	&-info {
-		// // background: lighten($color-primary, 40%);
-		// padding: 20px 0 0 20px;
-		// max-width: 640px;
 		margin: 20px auto;
 		border-radius: 20px;
-		// box-shadow: 20px 20px lighten($color-secondary, 40%);
 
 		&-inner {
-			background: $white;
-			// border-radius: 20px 0 20px 0;
-			// border: 3px solid lighten($black, 10%);
 			padding: 20px;
 		}
 

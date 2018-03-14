@@ -1,7 +1,12 @@
 .valueprop {
-	background: lighten($color-primary, 55%);
+	background: $color-secondary;
+	color: $white;
 	padding: 20px;
 	width: 100%;
+
+	h2 {
+		color: $color-primary;
+	}
 
 	&-offering {
 		@include flexbox(inline-flex);
@@ -13,7 +18,7 @@
 			@include transition(all 0.5s ease);
 			margin: 0 auto;
 			padding: 20px;
-			width: 25%;
+			width: 50%;
 		}
 
 		&-logo {

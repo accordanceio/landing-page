@@ -478,7 +478,8 @@ object {
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); }
 
 .about {
-  background: #cbd7e3;
+  background: #2c3e50;
+  color: #fff;
   padding: 20px 20px 40px;
   width: 100%; }
 
@@ -644,7 +645,8 @@ object {
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  background: #fff;
+  background: url(../../images/mission_bg.png) center center no-repeat;
+  background-size: cover;
   padding: 20px;
   width: 100%; }
   .mission h2 {
@@ -656,7 +658,6 @@ object {
     margin: 20px auto;
     border-radius: 20px; }
     .mission-info-inner {
-      background: #fff;
       padding: 20px; }
     .mission-info-text {
       margin: 10px auto 20px !important; }
@@ -733,17 +734,22 @@ object {
     margin: 35px auto 20px;
     padding: 0 10px; }
     .process-outline-element {
-      background: #fff;
+      background: #2ecc71;
+      color: #fff;
       border: 2px solid #2c3e50;
       border-radius: 20px;
       padding: 20px;
       margin: 40px auto 60px;
-      min-height: 160px;
-      max-width: 540px;
+      max-width: 480px;
       width: 100%;
       z-index: 90; }
       .process-outline-element:last-child {
         margin: 40px auto 40px; }
+      .process-outline-element h3 {
+        font-size: 32px !important;
+        font-size: 2rem !important;
+        font-weight: 600;
+        margin: 0 auto; }
     .process-outline-icons {
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -831,9 +837,12 @@ object {
     background: #2ecc71; }
 
 .valueprop {
-  background: white;
+  background: #2c3e50;
+  color: #fff;
   padding: 20px;
   width: 100%; }
+  .valueprop h2 {
+    color: #2ecc71; }
   .valueprop-offering {
     display: -ms-inline-flexbox;
     display: -webkit-inline-flex;
@@ -850,7 +859,7 @@ object {
       transition: all 0.5s ease;
       margin: 0 auto;
       padding: 20px;
-      width: 25%; }
+      width: 50%; }
     .valueprop-offering-logo {
       display: -ms-flexbox;
       display: -webkit-flex;
