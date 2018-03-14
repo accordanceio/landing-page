@@ -36,7 +36,6 @@
 
 		&-element {
 			@include align-items(center);
-			max-width: 280px;
 			margin: 25px;
 			border-radius: 20px;
 		}
@@ -71,6 +70,7 @@
 		&-infographic {
 			@include flexbox(flex);
 			@include flex-direction(column);
+			@include align-items(center);
 		}
 
 		h2 {

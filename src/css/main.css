@@ -680,7 +680,6 @@ object {
       -ms-flex-align: center;
       -webkit-align-items: center;
       align-items: center;
-      max-width: 280px;
       margin: 25px;
       border-radius: 20px; }
     .mission-infographic-logo {
@@ -715,7 +714,10 @@ object {
     display: flex;
     -ms-flex-direction: column;
     -webkit-flex-direction: column;
-    flex-direction: column; }
+    flex-direction: column;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center; }
   .mission h2 {
     font-size: 26px !important;
     font-size: 1.625rem !important; } }
@@ -885,6 +887,10 @@ h1 {
 
 body {
   margin: 0; }
+
+.main {
+  max-width: 1920px;
+  margin: 0 auto; }
 
 .section {
   -webkit-transition: all 0.5s ease;
